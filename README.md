@@ -76,7 +76,7 @@
 ![Dashboard Screenshot](./assets/dashboard.png)
 
 ### Order Management
-![Orders Screenshot](./assets/orders.png)
+![Orders Screenshot](./orderManagement-screenshot.png)
 
 ## 🤝 Contributing
 
