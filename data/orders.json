@@ -1,0 +1,3192 @@
+[
+  {
+    "shipped": [
+      {
+        "orderID": "SH001",
+        "CreatedDate": "2024-08-30T08:00:00Z",
+        "customerName": "John Doe",
+        "Total": 450.0,
+        "Profit": 90.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P001",
+            "product": "Apple MacBook Pro 16\"",
+            "price": 1200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P007",
+            "product": "LG UltraWide Monitor",
+            "price": 300.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH002",
+        "CreatedDate": "2024-08-30T08:10:00Z",
+        "customerName": "Jane Smith",
+        "Total": 650.0,
+        "Profit": 130.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P003",
+            "product": "Dell XPS 15",
+            "price": 1500.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P013",
+            "product": "Google Nest Mini",
+            "price": 60.0,
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "orderID": "SH003",
+        "CreatedDate": "2024-08-30T08:20:00Z",
+        "customerName": "Robert Johnson",
+        "Total": 300.0,
+        "Profit": 60.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P005",
+            "product": "Canon EOS R5",
+            "price": 2400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH004",
+        "CreatedDate": "2024-08-30T08:30:00Z",
+        "customerName": "Emily Davis",
+        "Total": 700.0,
+        "Profit": 140.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P002",
+            "product": "Apple iPhone 14",
+            "price": 1000.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P010",
+            "product": "Sony PlayStation 5",
+            "price": 500.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH005",
+        "CreatedDate": "2024-08-30T08:40:00Z",
+        "customerName": "Michael Wilson",
+        "Total": 150.0,
+        "Profit": 30.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P014",
+            "product": "Kindle Paperwhite",
+            "price": 130.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH006",
+        "CreatedDate": "2024-08-30T08:50:00Z",
+        "customerName": "Sarah Brown",
+        "Total": 500.0,
+        "Profit": 100.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P016",
+            "product": "Beats Studio3 Wireless",
+            "price": 250.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH007",
+        "CreatedDate": "2024-08-30T09:00:00Z",
+        "customerName": "David Wilson",
+        "Total": 350.0,
+        "Profit": 70.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P011",
+            "product": "Bose QuietComfort 35",
+            "price": 300.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH008",
+        "CreatedDate": "2024-08-30T09:10:00Z",
+        "customerName": "Olivia Smith",
+        "Total": 120.0,
+        "Profit": 24.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P019",
+            "product": "Samsung Galaxy Buds",
+            "price": 120.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH009",
+        "CreatedDate": "2024-08-30T09:20:00Z",
+        "customerName": "James Miller",
+        "Total": 250.0,
+        "Profit": 50.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P008",
+            "product": "HP Envy Laptop",
+            "price": 1000.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH010",
+        "CreatedDate": "2024-08-30T09:30:00Z",
+        "customerName": "Isabella Moore",
+        "Total": 275.0,
+        "Profit": 55.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P020",
+            "product": "Jabra Elite 75t",
+            "price": 180.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P021",
+            "product": "Logitech MX Master 3",
+            "price": 100.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT010",
+        "CreatedDate": "2024-08-30T10:00:00Z",
+        "customerName": "Mason Lewis",
+        "Total": 275.0,
+        "Profit": 60.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P004",
+            "product": "Nintendo Switch OLED",
+            "price": 350.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT011",
+        "CreatedDate": "2024-08-30T10:15:00Z",
+        "customerName": "Isabella Lee",
+        "Total": 220.0,
+        "Profit": 50.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P003",
+            "product": "Sony WH-1000XM4 Headphones",
+            "price": 350.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P005",
+            "product": "Canon EOS R5 Camera",
+            "price": 2400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT012",
+        "CreatedDate": "2024-08-30T10:30:00Z",
+        "customerName": "Aiden Scott",
+        "Total": 180.0,
+        "Profit": 36.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P009",
+            "product": "Jabra Elite 75t",
+            "price": 150.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P016",
+            "product": "Apple AirPods Pro",
+            "price": 250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT013",
+        "CreatedDate": "2024-08-30T10:45:00Z",
+        "customerName": "Evelyn Evans",
+        "Total": 290.0,
+        "Profit": 58.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P014",
+            "product": "Dell XPS 13",
+            "price": 1200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT014",
+        "CreatedDate": "2024-08-30T11:00:00Z",
+        "customerName": "Ethan Baker",
+        "Total": 250.0,
+        "Profit": 50.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P001",
+            "product": "Apple MacBook Pro 16\"",
+            "price": 1200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT015",
+        "CreatedDate": "2024-08-30T11:15:00Z",
+        "customerName": "Mia Thompson",
+        "Total": 180.0,
+        "Profit": 36.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P003",
+            "product": "Sony WH-1000XM4 Headphones",
+            "price": 350.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P008",
+            "product": "Bose SoundLink Speaker",
+            "price": 200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT016",
+        "CreatedDate": "2024-08-30T11:30:00Z",
+        "customerName": "Avery Turner",
+        "Total": 500.0,
+        "Profit": 100.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P005",
+            "product": "Canon EOS R5 Camera",
+            "price": 2400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P013",
+            "product": "Google Nest Mini",
+            "price": 60.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT017",
+        "CreatedDate": "2024-08-30T11:45:00Z",
+        "customerName": "Jackson Martinez",
+        "Total": 220.0,
+        "Profit": 44.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P007",
+            "product": "LG UltraWide Monitor",
+            "price": 300.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT018",
+        "CreatedDate": "2024-08-30T12:00:00Z",
+        "customerName": "Lily Robinson",
+        "Total": 250.0,
+        "Profit": 50.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P009",
+            "product": "Jabra Elite 75t",
+            "price": 150.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P014",
+            "product": "Dell XPS 13",
+            "price": 1200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT019",
+        "CreatedDate": "2024-08-30T12:15:00Z",
+        "customerName": "Mason Lewis",
+        "Total": 275.0,
+        "Profit": 60.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P004",
+            "product": "Nintendo Switch OLED",
+            "price": 350.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT020",
+        "CreatedDate": "2024-08-30T12:30:00Z",
+        "customerName": "Isabella Lee",
+        "Total": 220.0,
+        "Profit": 50.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P003",
+            "product": "Sony WH-1000XM4 Headphones",
+            "price": 350.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P005",
+            "product": "Canon EOS R5 Camera",
+            "price": 2400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT021",
+        "CreatedDate": "2024-08-30T12:45:00Z",
+        "customerName": "Aiden Scott",
+        "Total": 180.0,
+        "Profit": 36.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P009",
+            "product": "Jabra Elite 75t",
+            "price": 150.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P016",
+            "product": "Apple AirPods Pro",
+            "price": 250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT022",
+        "CreatedDate": "2024-08-30T13:00:00Z",
+        "customerName": "Evelyn Evans",
+        "Total": 290.0,
+        "Profit": 58.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P014",
+            "product": "Dell XPS 13",
+            "price": 1200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT023",
+        "CreatedDate": "2024-08-30T13:15:00Z",
+        "customerName": "Ethan Baker",
+        "Total": 250.0,
+        "Profit": 50.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P001",
+            "product": "Apple MacBook Pro 16\"",
+            "price": 1200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT024",
+        "CreatedDate": "2024-08-30T13:30:00Z",
+        "customerName": "Mia Thompson",
+        "Total": 180.0,
+        "Profit": 36.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P003",
+            "product": "Sony WH-1000XM4 Headphones",
+            "price": 350.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P008",
+            "product": "Bose SoundLink Speaker",
+            "price": 200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT025",
+        "CreatedDate": "2024-08-30T13:45:00Z",
+        "customerName": "Avery Turner",
+        "Total": 500.0,
+        "Profit": 100.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P005",
+            "product": "Canon EOS R5 Camera",
+            "price": 2400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P013",
+            "product": "Google Nest Mini",
+            "price": 60.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT026",
+        "CreatedDate": "2024-08-30T14:00:00Z",
+        "customerName": "Jackson Martinez",
+        "Total": 220.0,
+        "Profit": 44.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P007",
+            "product": "LG UltraWide Monitor",
+            "price": 300.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT027",
+        "CreatedDate": "2024-08-30T14:15:00Z",
+        "customerName": "Lily Robinson",
+        "Total": 250.0,
+        "Profit": 50.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P009",
+            "product": "Jabra Elite 75t",
+            "price": 150.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P014",
+            "product": "Dell XPS 13",
+            "price": 1200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT028",
+        "CreatedDate": "2024-08-30T14:30:00Z",
+        "customerName": "Mason Lewis",
+        "Total": 275.0,
+        "Profit": 60.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P004",
+            "product": "Nintendo Switch OLED",
+            "price": 350.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT029",
+        "CreatedDate": "2024-08-30T14:45:00Z",
+        "customerName": "Isabella Lee",
+        "Total": 220.0,
+        "Profit": 50.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P003",
+            "product": "Sony WH-1000XM4 Headphones",
+            "price": 350.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P005",
+            "product": "Canon EOS R5 Camera",
+            "price": 2400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT030",
+        "CreatedDate": "2024-08-30T15:00:00Z",
+        "customerName": "Aiden Scott",
+        "Total": 180.0,
+        "Profit": 36.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P009",
+            "product": "Jabra Elite 75t",
+            "price": 150.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P016",
+            "product": "Apple AirPods Pro",
+            "price": 250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "RT031",
+        "CreatedDate": "2024-08-30T15:15:00Z",
+        "customerName": "Evelyn Evans",
+        "Total": 290.0,
+        "Profit": 58.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P014",
+            "product": "Dell XPS 13",
+            "price": 1200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH051",
+        "CreatedDate": "2024-08-31T09:00:00Z",
+        "customerName": "Evelyn Green",
+        "Total": 150.0,
+        "Profit": 30.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P009",
+            "product": "Jabra Elite 75t",
+            "price": 150.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH052",
+        "CreatedDate": "2024-08-31T09:15:00Z",
+        "customerName": "Avery Wilson",
+        "Total": 300.0,
+        "Profit": 60.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P005",
+            "product": "Canon EOS R5 Camera",
+            "price": 2400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P013",
+            "product": "Google Nest Mini",
+            "price": 60.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH053",
+        "CreatedDate": "2024-08-31T09:30:00Z",
+        "customerName": "Liam Martinez",
+        "Total": 380.0,
+        "Profit": 76.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P002",
+            "product": "Apple iMac 27\"",
+            "price": 2000.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH054",
+        "CreatedDate": "2024-08-31T09:45:00Z",
+        "customerName": "Zoe Brown",
+        "Total": 270.0,
+        "Profit": 54.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P014",
+            "product": "Dell XPS 13",
+            "price": 1200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P008",
+            "product": "Bose SoundLink Speaker",
+            "price": 200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH055",
+        "CreatedDate": "2024-08-31T10:00:00Z",
+        "customerName": "Mason Lee",
+        "Total": 320.0,
+        "Profit": 64.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P006",
+            "product": "Apple iPad Pro",
+            "price": 1100.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH056",
+        "CreatedDate": "2024-08-31T10:15:00Z",
+        "customerName": "Harper Davis",
+        "Total": 240.0,
+        "Profit": 48.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P007",
+            "product": "LG UltraWide Monitor",
+            "price": 300.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P016",
+            "product": "Apple AirPods Pro",
+            "price": 250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH057",
+        "CreatedDate": "2024-08-31T10:30:00Z",
+        "customerName": "Nora Walker",
+        "Total": 260.0,
+        "Profit": 52.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P011",
+            "product": "Google Pixel 6",
+            "price": 600.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P013",
+            "product": "Google Nest Mini",
+            "price": 60.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH058",
+        "CreatedDate": "2024-08-31T10:45:00Z",
+        "customerName": "Jacob Young",
+        "Total": 340.0,
+        "Profit": 68.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P003",
+            "product": "Sony WH-1000XM4 Headphones",
+            "price": 350.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P014",
+            "product": "Dell XPS 13",
+            "price": 1200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH059",
+        "CreatedDate": "2024-08-31T11:00:00Z",
+        "customerName": "Ella Thompson",
+        "Total": 290.0,
+        "Profit": 58.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH060",
+        "CreatedDate": "2024-08-31T11:15:00Z",
+        "customerName": "Oliver White",
+        "Total": 370.0,
+        "Profit": 74.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P010",
+            "product": "Bose 700 Headphones",
+            "price": 400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P006",
+            "product": "Apple iPad Pro",
+            "price": 1100.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH061",
+        "CreatedDate": "2024-08-31T11:30:00Z",
+        "customerName": "Mia Robinson",
+        "Total": 280.0,
+        "Profit": 56.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P008",
+            "product": "Bose SoundLink Speaker",
+            "price": 200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P016",
+            "product": "Apple AirPods Pro",
+            "price": 250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "SH062",
+        "CreatedDate": "2024-08-31T11:45:00Z",
+        "customerName": "Lily Carter",
+        "Total": 220.0,
+        "Profit": 44.0,
+        "Status": "Shipped",
+        "orderItems": [
+          {
+            "SKU": "P009",
+            "product": "Jabra Elite 75t",
+            "price": 150.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P006",
+            "product": "Apple iPad Pro",
+            "price": 1100.0,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "cancelled": [
+      {
+        "orderID": "CA001",
+        "CreatedDate": "2024-03-30T10:00:00Z",
+        "customerName": "Ava Martinez",
+        "Total": 1450.0,
+        "Profit": 60.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA002",
+        "CreatedDate": "2024-04-01T11:30:00Z",
+        "customerName": "Liam Johnson",
+        "Total": 950.0,
+        "Profit": 40.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P022",
+            "product": "Dell XPS 13",
+            "price": 950.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA003",
+        "CreatedDate": "2024-04-05T12:00:00Z",
+        "customerName": "Sophia Brown",
+        "Total": 420.0,
+        "Profit": 25.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P030",
+            "product": "Apple iPad Pro",
+            "price": 420.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA004",
+        "CreatedDate": "2024-04-10T14:15:00Z",
+        "customerName": "Mia Williams",
+        "Total": 2200.0,
+        "Profit": 150.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P045",
+            "product": "Sony A7 III",
+            "price": 2000.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P046",
+            "product": "Canon EF 50mm f/1.8",
+            "price": 200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA005",
+        "CreatedDate": "2024-04-12T15:20:00Z",
+        "customerName": "Ethan Davis",
+        "Total": 350.0,
+        "Profit": 20.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P052",
+            "product": "HP Pavilion x360",
+            "price": 350.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA006",
+        "CreatedDate": "2024-04-15T16:25:00Z",
+        "customerName": "Isabella Garcia",
+        "Total": 1300.0,
+        "Profit": 80.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P060",
+            "product": "Microsoft Surface Laptop 4",
+            "price": 1300.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA007",
+        "CreatedDate": "2024-04-18T17:30:00Z",
+        "customerName": "Noah Rodriguez",
+        "Total": 1500.0,
+        "Profit": 100.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P070",
+            "product": "MacBook Air M2",
+            "price": 1200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P071",
+            "product": "Magic Mouse",
+            "price": 300.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA008",
+        "CreatedDate": "2024-04-20T18:35:00Z",
+        "customerName": "Olivia Martinez",
+        "Total": 600.0,
+        "Profit": 45.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P080",
+            "product": "Google Pixel 7",
+            "price": 600.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA009",
+        "CreatedDate": "2024-04-22T19:40:00Z",
+        "customerName": "James Wilson",
+        "Total": 850.0,
+        "Profit": 50.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P090",
+            "product": "Dell Inspiron 15",
+            "price": 850.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA010",
+        "CreatedDate": "2024-04-25T20:45:00Z",
+        "customerName": "Emma Anderson",
+        "Total": 780.0,
+        "Profit": 35.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P100",
+            "product": "Apple Watch Series 8",
+            "price": 780.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA011",
+        "CreatedDate": "2024-04-28T21:50:00Z",
+        "customerName": "Aiden Thomas",
+        "Total": 2000.0,
+        "Profit": 120.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P110",
+            "product": "Samsung Galaxy S23",
+            "price": 1000.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P111",
+            "product": "Samsung Galaxy Buds Pro",
+            "price": 200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA012",
+        "CreatedDate": "2024-05-01T22:55:00Z",
+        "customerName": "Charlotte Harris",
+        "Total": 150.0,
+        "Profit": 10.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P120",
+            "product": "Logitech MX Master 3",
+            "price": 150.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA013",
+        "CreatedDate": "2024-05-04T23:00:00Z",
+        "customerName": "Benjamin Clark",
+        "Total": 1200.0,
+        "Profit": 90.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P130",
+            "product": "Sony WH-1000XM5",
+            "price": 1200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA014",
+        "CreatedDate": "2024-05-07T09:10:00Z",
+        "customerName": "Amelia Lewis",
+        "Total": 500.0,
+        "Profit": 25.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P140",
+            "product": "Fitbit Charge 5",
+            "price": 500.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA015",
+        "CreatedDate": "2024-05-10T10:15:00Z",
+        "customerName": "Jacob Walker",
+        "Total": 700.0,
+        "Profit": 50.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P150",
+            "product": "Jabra Elite 85h",
+            "price": 700.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA016",
+        "CreatedDate": "2024-05-13T11:20:00Z",
+        "customerName": "Harper Young",
+        "Total": 950.0,
+        "Profit": 60.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P160",
+            "product": "Nikon Z50",
+            "price": 950.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA017",
+        "CreatedDate": "2024-05-16T12:25:00Z",
+        "customerName": "Elijah King",
+        "Total": 1200.0,
+        "Profit": 70.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P170",
+            "product": "Apple MacBook Pro",
+            "price": 1200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA018",
+        "CreatedDate": "2024-05-19T13:30:00Z",
+        "customerName": "Mason Scott",
+        "Total": 350.0,
+        "Profit": 20.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P180",
+            "product": "Microsoft Xbox Series X",
+            "price": 350.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA019",
+        "CreatedDate": "2024-05-22T14:35:00Z",
+        "customerName": "Ella Wright",
+        "Total": 430.0,
+        "Profit": 30.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P190",
+            "product": "Oculus Quest 2",
+            "price": 430.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA020",
+        "CreatedDate": "2024-05-25T15:40:00Z",
+        "customerName": "Alexander Green",
+        "Total": 780.0,
+        "Profit": 50.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P200",
+            "product": "Bose QuietComfort 45",
+            "price": 780.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA021",
+        "CreatedDate": "2024-05-28T16:45:00Z",
+        "customerName": "Grace Adams",
+        "Total": 2100.0,
+        "Profit": 120.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P210",
+            "product": "Canon EOS R6",
+            "price": 2000.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P211",
+            "product": "Canon RF 24-70mm f/2.8",
+            "price": 100.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA022",
+        "CreatedDate": "2024-05-31T17:50:00Z",
+        "customerName": "James Hill",
+        "Total": 950.0,
+        "Profit": 55.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P220",
+            "product": "Razer Blade 15",
+            "price": 950.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA023",
+        "CreatedDate": "2024-06-03T18:55:00Z",
+        "customerName": "Mia Nelson",
+        "Total": 1500.0,
+        "Profit": 80.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P230",
+            "product": "Lenovo ThinkPad X1",
+            "price": 1500.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA024",
+        "CreatedDate": "2024-06-06T20:00:00Z",
+        "customerName": "Daniel Carter",
+        "Total": 700.0,
+        "Profit": 45.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P240",
+            "product": "Sony WH-1000XM4",
+            "price": 700.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA025",
+        "CreatedDate": "2024-06-09T21:05:00Z",
+        "customerName": "Avery Mitchell",
+        "Total": 400.0,
+        "Profit": 30.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P250",
+            "product": "Apple AirPods Pro",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA026",
+        "CreatedDate": "2024-06-12T22:10:00Z",
+        "customerName": "Lucas Turner",
+        "Total": 900.0,
+        "Profit": 60.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P260",
+            "product": "Google Pixel Watch",
+            "price": 900.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA027",
+        "CreatedDate": "2024-06-15T23:15:00Z",
+        "customerName": "Ella Harris",
+        "Total": 350.0,
+        "Profit": 20.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P270",
+            "product": "Logitech G502",
+            "price": 350.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA028",
+        "CreatedDate": "2024-06-18T09:20:00Z",
+        "customerName": "Henry Coleman",
+        "Total": 500.0,
+        "Profit": 30.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P280",
+            "product": "Samsung Galaxy Buds 2",
+            "price": 500.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA029",
+        "CreatedDate": "2024-06-21T10:25:00Z",
+        "customerName": "Chloe Allen",
+        "Total": 1250.0,
+        "Profit": 70.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P290",
+            "product": "MacBook Pro 16",
+            "price": 1250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "CA030",
+        "CreatedDate": "2024-06-24T11:30:00Z",
+        "customerName": "Jack Wright",
+        "Total": 300.0,
+        "Profit": 15.0,
+        "Status": "Cancelled",
+        "orderItems": [
+          {
+            "SKU": "P300",
+            "product": "Fitbit Versa 3",
+            "price": 300.0,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "pending": [
+      {
+        "orderID": "PE001",
+        "CreatedDate": "2024-08-30T10:00:00Z",
+        "customerName": "Ava Martinez",
+        "Total": 200.0,
+        "Profit": 40.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE002",
+        "CreatedDate": "2024-08-30T10:10:00Z",
+        "customerName": "Liam Anderson",
+        "Total": 175.0,
+        "Profit": 35.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P009",
+            "product": "Dell XPS 13",
+            "price": 1400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE003",
+        "CreatedDate": "2024-08-30T10:20:00Z",
+        "customerName": "Sophia Thomas",
+        "Total": 280.0,
+        "Profit": 56.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P006",
+            "product": "Apple iPad Pro",
+            "price": 1100.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P016",
+            "product": "Beats Studio3 Wireless",
+            "price": 250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE004",
+        "CreatedDate": "2024-08-30T10:30:00Z",
+        "customerName": "Noah White",
+        "Total": 500.0,
+        "Profit": 100.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P004",
+            "product": "Nintendo Switch OLED",
+            "price": 350.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P007",
+            "product": "LG UltraWide Monitor",
+            "price": 300.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE005",
+        "CreatedDate": "2024-08-30T10:40:00Z",
+        "customerName": "Isabella Martin",
+        "Total": 340.0,
+        "Profit": 68.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P013",
+            "product": "Google Nest Mini",
+            "price": 60.0,
+            "quantity": 2
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE006",
+        "CreatedDate": "2024-08-30T10:50:00Z",
+        "customerName": "Lucas Lee",
+        "Total": 450.0,
+        "Profit": 90.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P008",
+            "product": "HP Envy Laptop",
+            "price": 1000.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P020",
+            "product": "Jabra Elite 75t",
+            "price": 180.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE007",
+        "CreatedDate": "2024-08-30T11:00:00Z",
+        "customerName": "Mia Harris",
+        "Total": 220.0,
+        "Profit": 44.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE008",
+        "CreatedDate": "2024-08-30T11:10:00Z",
+        "customerName": "Ethan Clark",
+        "Total": 400.0,
+        "Profit": 80.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P001",
+            "product": "Apple MacBook Pro 16\"",
+            "price": 1200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P016",
+            "product": "Beats Studio3 Wireless",
+            "price": 250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE009",
+        "CreatedDate": "2024-08-30T11:20:00Z",
+        "customerName": "Charlotte Allen",
+        "Total": 160.0,
+        "Profit": 32.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P019",
+            "product": "Samsung Galaxy Buds",
+            "price": 120.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P014",
+            "product": "Kindle Paperwhite",
+            "price": 130.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE010",
+        "CreatedDate": "2024-08-30T10:00:00Z",
+        "customerName": "Liam Anderson",
+        "Total": 100.0,
+        "Profit": 20.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE011",
+        "CreatedDate": "2024-08-30T10:15:00Z",
+        "customerName": "Olivia Adams",
+        "Total": 450.0,
+        "Profit": 90.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P001",
+            "product": "Apple MacBook Pro 16\"",
+            "price": 1200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P014",
+            "product": "Dell XPS 13",
+            "price": 1200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE012",
+        "CreatedDate": "2024-08-30T10:30:00Z",
+        "customerName": "Ethan Miller",
+        "Total": 330.0,
+        "Profit": 66.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P006",
+            "product": "Apple iPad Pro",
+            "price": 1100.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P009",
+            "product": "Jabra Elite 75t",
+            "price": 150.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE013",
+        "CreatedDate": "2024-08-30T10:45:00Z",
+        "customerName": "Emma Johnson",
+        "Total": 260.0,
+        "Profit": 52.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P007",
+            "product": "LG UltraWide Monitor",
+            "price": 300.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE014",
+        "CreatedDate": "2024-08-30T11:00:00Z",
+        "customerName": "James Brown",
+        "Total": 190.0,
+        "Profit": 38.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P009",
+            "product": "Jabra Elite 75t",
+            "price": 150.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE015",
+        "CreatedDate": "2024-08-30T11:15:00Z",
+        "customerName": "Sophia Wilson",
+        "Total": 370.0,
+        "Profit": 74.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P005",
+            "product": "Canon EOS R5 Camera",
+            "price": 2400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P013",
+            "product": "Google Nest Mini",
+            "price": 60.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE016",
+        "CreatedDate": "2024-08-30T11:30:00Z",
+        "customerName": "Benjamin Davis",
+        "Total": 280.0,
+        "Profit": 56.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P002",
+            "product": "Apple iMac 27\"",
+            "price": 2000.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE017",
+        "CreatedDate": "2024-08-30T11:45:00Z",
+        "customerName": "Ella Moore",
+        "Total": 240.0,
+        "Profit": 48.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P003",
+            "product": "Sony WH-1000XM4 Headphones",
+            "price": 350.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE018",
+        "CreatedDate": "2024-08-30T12:00:00Z",
+        "customerName": "Lucas Harris",
+        "Total": 220.0,
+        "Profit": 44.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P006",
+            "product": "Apple iPad Pro",
+            "price": 1100.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P007",
+            "product": "LG UltraWide Monitor",
+            "price": 300.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE019",
+        "CreatedDate": "2024-08-30T12:15:00Z",
+        "customerName": "Mia Taylor",
+        "Total": 340.0,
+        "Profit": 68.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P010",
+            "product": "Bose 700 Headphones",
+            "price": 400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE020",
+        "CreatedDate": "2024-08-30T12:30:00Z",
+        "customerName": "Ava King",
+        "Total": 190.0,
+        "Profit": 38.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P011",
+            "product": "Google Pixel 6",
+            "price": 600.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE021",
+        "CreatedDate": "2024-08-30T12:45:00Z",
+        "customerName": "Charlotte Wright",
+        "Total": 310.0,
+        "Profit": 62.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P005",
+            "product": "Canon EOS R5 Camera",
+            "price": 2400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P016",
+            "product": "Apple AirPods Pro",
+            "price": 250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE022",
+        "CreatedDate": "2024-08-30T13:00:00Z",
+        "customerName": "Amelia Young",
+        "Total": 230.0,
+        "Profit": 46.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P014",
+            "product": "Dell XPS 13",
+            "price": 1200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE023",
+        "CreatedDate": "2024-08-30T13:15:00Z",
+        "customerName": "Daniel Lee",
+        "Total": 270.0,
+        "Profit": 54.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE024",
+        "CreatedDate": "2024-08-30T13:30:00Z",
+        "customerName": "William Harris",
+        "Total": 310.0,
+        "Profit": 62.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P008",
+            "product": "Bose SoundLink Speaker",
+            "price": 200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE025",
+        "CreatedDate": "2024-08-30T13:45:00Z",
+        "customerName": "Elijah Scott",
+        "Total": 340.0,
+        "Profit": 68.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P005",
+            "product": "Canon EOS R5 Camera",
+            "price": 2400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P013",
+            "product": "Google Nest Mini",
+            "price": 60.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE026",
+        "CreatedDate": "2024-08-30T14:00:00Z",
+        "customerName": "Zoe Walker",
+        "Total": 290.0,
+        "Profit": 58.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P009",
+            "product": "Jabra Elite 75t",
+            "price": 150.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P016",
+            "product": "Apple AirPods Pro",
+            "price": 250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE027",
+        "CreatedDate": "2024-08-30T14:15:00Z",
+        "customerName": "Jackson Adams",
+        "Total": 260.0,
+        "Profit": 52.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P007",
+            "product": "LG UltraWide Monitor",
+            "price": 300.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P013",
+            "product": "Google Nest Mini",
+            "price": 60.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE028",
+        "CreatedDate": "2024-08-30T14:30:00Z",
+        "customerName": "Grace Hall",
+        "Total": 230.0,
+        "Profit": 46.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P014",
+            "product": "Dell XPS 13",
+            "price": 1200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE029",
+        "CreatedDate": "2024-08-30T14:45:00Z",
+        "customerName": "Madison Clark",
+        "Total": 280.0,
+        "Profit": 56.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P002",
+            "product": "Apple iMac 27\"",
+            "price": 2000.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE030",
+        "CreatedDate": "2024-08-30T15:00:00Z",
+        "customerName": "Michael Allen",
+        "Total": 320.0,
+        "Profit": 64.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P006",
+            "product": "Apple iPad Pro",
+            "price": 1100.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE031",
+        "CreatedDate": "2024-08-31T12:00:00Z",
+        "customerName": "Ethan Harris",
+        "Total": 340.0,
+        "Profit": 68.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P010",
+            "product": "Bose 700 Headphones",
+            "price": 400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE032",
+        "CreatedDate": "2024-08-31T12:15:00Z",
+        "customerName": "Ava Taylor",
+        "Total": 300.0,
+        "Profit": 60.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P005",
+            "product": "Canon EOS R5 Camera",
+            "price": 2400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE033",
+        "CreatedDate": "2024-08-31T12:30:00Z",
+        "customerName": "Noah Anderson",
+        "Total": 290.0,
+        "Profit": 58.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P006",
+            "product": "Apple iPad Pro",
+            "price": 1100.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P013",
+            "product": "Google Nest Mini",
+            "price": 60.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE034",
+        "CreatedDate": "2024-08-31T12:45:00Z",
+        "customerName": "Isabella Clark",
+        "Total": 220.0,
+        "Profit": 44.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P011",
+            "product": "Google Pixel 6",
+            "price": 600.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE035",
+        "CreatedDate": "2024-08-31T13:00:00Z",
+        "customerName": "Liam Robinson",
+        "Total": 250.0,
+        "Profit": 50.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P014",
+            "product": "Dell XPS 13",
+            "price": 1200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE036",
+        "CreatedDate": "2024-08-31T13:15:00Z",
+        "customerName": "Mason Young",
+        "Total": 330.0,
+        "Profit": 66.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P008",
+            "product": "Bose SoundLink Speaker",
+            "price": 200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P016",
+            "product": "Apple AirPods Pro",
+            "price": 250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE037",
+        "CreatedDate": "2024-08-31T13:30:00Z",
+        "customerName": "Evelyn Carter",
+        "Total": 310.0,
+        "Profit": 62.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P002",
+            "product": "Apple iMac 27\"",
+            "price": 2000.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P013",
+            "product": "Google Nest Mini",
+            "price": 60.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE038",
+        "CreatedDate": "2024-08-31T13:45:00Z",
+        "customerName": "Daniel Moore",
+        "Total": 270.0,
+        "Profit": 54.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P009",
+            "product": "Jabra Elite 75t",
+            "price": 150.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P014",
+            "product": "Dell XPS 13",
+            "price": 1200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE039",
+        "CreatedDate": "2024-08-31T14:00:00Z",
+        "customerName": "Sophia Martinez",
+        "Total": 290.0,
+        "Profit": 58.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P005",
+            "product": "Canon EOS R5 Camera",
+            "price": 2400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE040",
+        "CreatedDate": "2024-08-31T14:15:00Z",
+        "customerName": "Charlotte Smith",
+        "Total": 250.0,
+        "Profit": 50.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P006",
+            "product": "Apple iPad Pro",
+            "price": 1100.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P016",
+            "product": "Apple AirPods Pro",
+            "price": 250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE041",
+        "CreatedDate": "2024-08-31T14:30:00Z",
+        "customerName": "Jackson White",
+        "Total": 320.0,
+        "Profit": 64.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P007",
+            "product": "LG UltraWide Monitor",
+            "price": 300.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "PE042",
+        "CreatedDate": "2024-08-31T14:45:00Z",
+        "customerName": "Aria Johnson",
+        "Total": 270.0,
+        "Profit": 54.0,
+        "Status": "Pending",
+        "orderItems": [
+          {
+            "SKU": "P008",
+            "product": "Bose SoundLink Speaker",
+            "price": 200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "delivered": [
+      {
+        "orderID": "DE001",
+        "CreatedDate": "2024-08-30T14:00:00Z",
+        "customerName": "Evelyn Wilson",
+        "Total": 150.0,
+        "Profit": 30.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE002",
+        "CreatedDate": "2024-08-30T14:10:00Z",
+        "customerName": "Oliver Young",
+        "Total": 180.0,
+        "Profit": 36.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P016",
+            "product": "Beats Studio3 Wireless",
+            "price": 250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE003",
+        "CreatedDate": "2024-08-30T14:20:00Z",
+        "customerName": "Aiden Thomas",
+        "Total": 220.0,
+        "Profit": 44.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P009",
+            "product": "Dell XPS 13",
+            "price": 1400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P020",
+            "product": "Jabra Elite 75t",
+            "price": 180.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE004",
+        "CreatedDate": "2024-08-30T14:30:00Z",
+        "customerName": "Mia Robinson",
+        "Total": 240.0,
+        "Profit": 48.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P002",
+            "product": "Apple iPhone 14",
+            "price": 1000.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE005",
+        "CreatedDate": "2024-08-30T14:40:00Z",
+        "customerName": "Noah Lee",
+        "Total": 350.0,
+        "Profit": 70.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P007",
+            "product": "LG UltraWide Monitor",
+            "price": 300.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE006",
+        "CreatedDate": "2024-08-30T14:50:00Z",
+        "customerName": "Lily Scott",
+        "Total": 220.0,
+        "Profit": 44.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P003",
+            "product": "Dell XPS 15",
+            "price": 1500.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE007",
+        "CreatedDate": "2024-08-30T15:00:00Z",
+        "customerName": "Elijah Green",
+        "Total": 310.0,
+        "Profit": 62.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P010",
+            "product": "Sony PlayStation 5",
+            "price": 500.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P013",
+            "product": "Google Nest Mini",
+            "price": 60.0,
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "orderID": "DE008",
+        "CreatedDate": "2024-08-30T15:10:00Z",
+        "customerName": "Ava Martinez",
+        "Total": 500.0,
+        "Profit": 100.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P001",
+            "product": "Apple MacBook Pro 16\"",
+            "price": 1200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P016",
+            "product": "Beats Studio3 Wireless",
+            "price": 250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE009",
+        "CreatedDate": "2024-08-30T15:20:00Z",
+        "customerName": "Benjamin Adams",
+        "Total": 150.0,
+        "Profit": 30.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P014",
+            "product": "Kindle Paperwhite",
+            "price": 130.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE010",
+        "CreatedDate": "2024-08-30T10:00:00Z",
+        "customerName": "Liam Anderson",
+        "Total": 100.0,
+        "Profit": 20.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE011",
+        "CreatedDate": "2024-08-30T10:15:00Z",
+        "customerName": "Olivia Adams",
+        "Total": 450.0,
+        "Profit": 90.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P001",
+            "product": "Apple MacBook Pro 16\"",
+            "price": 1200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P014",
+            "product": "Dell XPS 13",
+            "price": 1200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE012",
+        "CreatedDate": "2024-08-30T10:30:00Z",
+        "customerName": "Ethan Miller",
+        "Total": 330.0,
+        "Profit": 66.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P006",
+            "product": "Apple iPad Pro",
+            "price": 1100.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P009",
+            "product": "Jabra Elite 75t",
+            "price": 150.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE013",
+        "CreatedDate": "2024-08-30T10:45:00Z",
+        "customerName": "Emma Johnson",
+        "Total": 260.0,
+        "Profit": 52.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P007",
+            "product": "LG UltraWide Monitor",
+            "price": 300.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE014",
+        "CreatedDate": "2024-08-30T11:00:00Z",
+        "customerName": "James Brown",
+        "Total": 190.0,
+        "Profit": 38.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P009",
+            "product": "Jabra Elite 75t",
+            "price": 150.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE015",
+        "CreatedDate": "2024-08-30T11:15:00Z",
+        "customerName": "Sophia Wilson",
+        "Total": 370.0,
+        "Profit": 74.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P005",
+            "product": "Canon EOS R5 Camera",
+            "price": 2400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P013",
+            "product": "Google Nest Mini",
+            "price": 60.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE016",
+        "CreatedDate": "2024-08-30T11:30:00Z",
+        "customerName": "Benjamin Davis",
+        "Total": 280.0,
+        "Profit": 56.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P002",
+            "product": "Apple iMac 27\"",
+            "price": 2000.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE017",
+        "CreatedDate": "2024-08-30T11:45:00Z",
+        "customerName": "Ella Moore",
+        "Total": 240.0,
+        "Profit": 48.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P003",
+            "product": "Sony WH-1000XM4 Headphones",
+            "price": 350.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE018",
+        "CreatedDate": "2024-08-30T12:00:00Z",
+        "customerName": "Lucas Harris",
+        "Total": 220.0,
+        "Profit": 44.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P006",
+            "product": "Apple iPad Pro",
+            "price": 1100.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P007",
+            "product": "LG UltraWide Monitor",
+            "price": 300.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE019",
+        "CreatedDate": "2024-08-30T12:15:00Z",
+        "customerName": "Mia Taylor",
+        "Total": 340.0,
+        "Profit": 68.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P010",
+            "product": "Bose 700 Headphones",
+            "price": 400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE020",
+        "CreatedDate": "2024-08-30T12:30:00Z",
+        "customerName": "Ava King",
+        "Total": 190.0,
+        "Profit": 38.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P011",
+            "product": "Google Pixel 6",
+            "price": 600.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE021",
+        "CreatedDate": "2024-08-30T12:45:00Z",
+        "customerName": "Charlotte Wright",
+        "Total": 310.0,
+        "Profit": 62.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P005",
+            "product": "Canon EOS R5 Camera",
+            "price": 2400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P016",
+            "product": "Apple AirPods Pro",
+            "price": 250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE022",
+        "CreatedDate": "2024-08-30T13:00:00Z",
+        "customerName": "Amelia Young",
+        "Total": 230.0,
+        "Profit": 46.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P014",
+            "product": "Dell XPS 13",
+            "price": 1200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE023",
+        "CreatedDate": "2024-08-30T13:15:00Z",
+        "customerName": "Daniel Lee",
+        "Total": 270.0,
+        "Profit": 54.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE024",
+        "CreatedDate": "2024-08-30T13:30:00Z",
+        "customerName": "William Harris",
+        "Total": 310.0,
+        "Profit": 62.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P008",
+            "product": "Bose SoundLink Speaker",
+            "price": 200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE025",
+        "CreatedDate": "2024-08-31T15:00:00Z",
+        "customerName": "Mia Anderson",
+        "Total": 220.0,
+        "Profit": 44.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P011",
+            "product": "Google Pixel 6",
+            "price": 600.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE026",
+        "CreatedDate": "2024-08-31T15:15:00Z",
+        "customerName": "James Clark",
+        "Total": 310.0,
+        "Profit": 62.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P005",
+            "product": "Canon EOS R5 Camera",
+            "price": 2400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P014",
+            "product": "Dell XPS 13",
+            "price": 1200.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE027",
+        "CreatedDate": "2024-08-31T15:30:00Z",
+        "customerName": "Logan White",
+        "Total": 280.0,
+        "Profit": 56.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P009",
+            "product": "Jabra Elite 75t",
+            "price": 150.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P013",
+            "product": "Google Nest Mini",
+            "price": 60.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE028",
+        "CreatedDate": "2024-08-31T15:45:00Z",
+        "customerName": "Chloe Brown",
+        "Total": 330.0,
+        "Profit": 66.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P016",
+            "product": "Apple AirPods Pro",
+            "price": 250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE029",
+        "CreatedDate": "2024-08-31T16:00:00Z",
+        "customerName": "Henry Davis",
+        "Total": 250.0,
+        "Profit": 50.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P010",
+            "product": "Bose 700 Headphones",
+            "price": 400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE030",
+        "CreatedDate": "2024-08-31T16:15:00Z",
+        "customerName": "Lila Harris",
+        "Total": 270.0,
+        "Profit": 54.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P007",
+            "product": "LG UltraWide Monitor",
+            "price": 300.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P015",
+            "product": "Microsoft Surface Pro 7",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE031",
+        "CreatedDate": "2024-08-31T16:30:00Z",
+        "customerName": "Jackson Smith",
+        "Total": 190.0,
+        "Profit": 38.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P009",
+            "product": "Jabra Elite 75t",
+            "price": 150.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE032",
+        "CreatedDate": "2024-08-31T16:45:00Z",
+        "customerName": "Megan Lewis",
+        "Total": 340.0,
+        "Profit": 68.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P006",
+            "product": "Apple iPad Pro",
+            "price": 1100.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P016",
+            "product": "Apple AirPods Pro",
+            "price": 250.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE033",
+        "CreatedDate": "2024-08-31T17:00:00Z",
+        "customerName": "Ethan Young",
+        "Total": 380.0,
+        "Profit": 76.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P005",
+            "product": "Canon EOS R5 Camera",
+            "price": 2400.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE034",
+        "CreatedDate": "2024-08-31T17:15:00Z",
+        "customerName": "Olivia Martin",
+        "Total": 330.0,
+        "Profit": 66.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P008",
+            "product": "Bose SoundLink Speaker",
+            "price": 200.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P017",
+            "product": "Apple Watch Series 6",
+            "price": 400.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE035",
+        "CreatedDate": "2024-08-31T17:30:00Z",
+        "customerName": "Emma Brown",
+        "Total": 270.0,
+        "Profit": 54.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P007",
+            "product": "LG UltraWide Monitor",
+            "price": 300.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P012",
+            "product": "Samsung QLED TV",
+            "price": 800.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE036",
+        "CreatedDate": "2024-08-31T17:45:00Z",
+        "customerName": "William Davis",
+        "Total": 230.0,
+        "Profit": 46.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P013",
+            "product": "Google Nest Mini",
+            "price": 60.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P018",
+            "product": "Asus ROG Strix",
+            "price": 650.0,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "orderID": "DE037",
+        "CreatedDate": "2024-08-30T15:30:00Z",
+        "customerName": "Isabella Morris",
+        "Total": 275.0,
+        "Profit": 55.0,
+        "Status": "Delivered",
+        "orderItems": [
+          {
+            "SKU": "P020",
+            "product": "Jabra Elite 75t",
+            "price": 180.0,
+            "quantity": 1
+          },
+          {
+            "SKU": "P021",
+            "product": "Logitech MX Master 3",
+            "price": 100.0,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  }
+]
