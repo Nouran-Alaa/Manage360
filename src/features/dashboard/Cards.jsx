@@ -51,13 +51,13 @@ const Cards = ({ title, num, percentage, data }) => {
   };
 
   return (
-    <div className="flex items-center mb-5">
-      <div className="bg-white w-[300px] h-[250px] rounded-md p-4 flex flex-col justify-between">
+    <div className="flex items-center mb-5 flex-wrap justify-center">
+      <div className="bg-white w-[300px] h-[250px] rounded-md p-4 flex flex-col justify-between my-3">
         <div>
           <p className="font-bold text-2xl">{title}</p>
           <p className="text-sm text-gray-400">Last 7 days</p>
         </div>
-        <span className="text-6xl font-bold flex justify-center">
+        <span className="text-4xl font-bold flex justify-center">
           <AnimatedNumbers n={num} duration={1000} />k
         </span>
         <span className="text-green-400 text-md font-semibold flex justify-center items-center">
@@ -65,7 +65,7 @@ const Cards = ({ title, num, percentage, data }) => {
           <AnimatedNumbers n={percentage} duration={1000} />%
         </span>
       </div>
-      <div className="w-[400px] h-[250px] bg-white p-5">
+      <div className="w-[400px] h-[250px] bg-white p-5 my-3">
         <Line data={chartData} options={options} />
       </div>
     </div>
