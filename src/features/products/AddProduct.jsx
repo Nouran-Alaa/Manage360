@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import TagsInput from './TagsInput';
+import ProductPreview from './ProductPreview';
 
 const AddProduct = () => {
   const [category, setCategory] = useState('');
@@ -366,7 +367,9 @@ const AddProduct = () => {
           </button>
         </form>
       </div>
-      <div className="bg-white rounded-lg"></div>
+      <div className="bg-white rounded-lg">
+        <ProductPreview />
+      </div>
     </div>
   );
 };

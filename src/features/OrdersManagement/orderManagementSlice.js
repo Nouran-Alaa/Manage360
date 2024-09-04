@@ -17,6 +17,8 @@ export const fetchData = createAsyncThunk(
 
 const initialState = {
   orders: [],
+  query: '',
+  searchedOrders: [],
   activeTab: '1',
   orderDetailsOpen: false,
 };
@@ -31,6 +33,23 @@ const orderManagementSlice = createSlice({
     setOrderDetailsOpen(state) {
       state.orderDetailsOpen = !state.orderDetailsOpen;
     },
+    setQuery(state, action) {
+      state.query = action.payload;
+      // Filter all orders based on the query
+      const query = action.payload.toLowerCase();
+      const filterOrders = (orders) =>
+        orders.filter((order) =>
+          `${order.orderID} ${order.customerName}`.toLowerCase().includes(query)
+        );
+
+      // Filter each order status and combine results
+      state.searchedOrders = [
+        ...filterOrders(state.orders.pending),
+        ...filterOrders(state.orders.shipped),
+        ...filterOrders(state.orders.cancelled),
+        ...filterOrders(state.orders.delivered),
+      ];
+    },
   },
 
   extraReducers: (builder) => {
@@ -41,6 +60,12 @@ const orderManagementSlice = createSlice({
       .addCase(fetchData.fulfilled, (state, action) => {
         state.status = 'succeeded';
         state.orders = action.payload;
+        state.searchedOrders = [
+          ...action.payload.pending,
+          ...action.payload.shipped,
+          ...action.payload.cancelled,
+          ...action.payload.delivered,
+        ];
       })
       .addCase(fetchData.rejected, (state, action) => {
         state.status = 'failed';
@@ -49,6 +74,6 @@ const orderManagementSlice = createSlice({
   },
 });
 
-export const { setActiveTab, setOrderDetailsOpen } =
+export const { setActiveTab, setOrderDetailsOpen, setQuery } =
   orderManagementSlice.actions;
 export default orderManagementSlice.reducer;
