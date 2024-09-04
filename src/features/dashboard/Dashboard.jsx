@@ -1,6 +1,6 @@
 import React from 'react';
 import Cards from './Cards';
-import Sales from './Sales';
+
 
 const userData = [
   { name: 'MON', value: 500 },
