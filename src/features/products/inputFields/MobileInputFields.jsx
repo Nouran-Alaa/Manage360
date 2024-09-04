@@ -45,6 +45,7 @@ const MobileInputFields = () => {
             Name:
           </label>
           <input
+            required
             value={name}
             onChange={(e) => dispatch(setName(e.target.value))}
             type="text"
@@ -57,6 +58,7 @@ const MobileInputFields = () => {
             Brand:
           </label>
           <input
+            required
             value={brand}
             onChange={(e) => dispatch(setBrand(e.target.value))}
             type="text"
@@ -70,6 +72,7 @@ const MobileInputFields = () => {
           Description:
         </label>
         <textarea
+          required
           value={description}
           onChange={(e) => dispatch(setDescription(e.target.value))}
           name="Description"
@@ -83,6 +86,7 @@ const MobileInputFields = () => {
             Processor:
           </label>
           <input
+            required
             value={processor}
             onChange={(e) => dispatch(setProcessor(e.target.value))}
             type="text"
@@ -95,6 +99,7 @@ const MobileInputFields = () => {
             RAM:
           </label>
           <input
+            required
             value={mobileRAM}
             onChange={(e) => dispatch(setMobileRAM(e.target.value))}
             type="text"
@@ -107,6 +112,7 @@ const MobileInputFields = () => {
             Camera:
           </label>
           <input
+            required
             value={camera}
             onChange={(e) => dispatch(setCamera(e.target.value))}
             type="text"
@@ -121,6 +127,7 @@ const MobileInputFields = () => {
             Color:
           </label>
           <TagsInput
+            required
             tags={colors}
             setTags={(tags) => dispatch(setColors(tags))}
             title="color"

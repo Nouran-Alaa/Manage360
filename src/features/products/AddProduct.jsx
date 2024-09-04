@@ -3,20 +3,37 @@ import ProductPreview from './ProductPreview';
 import MobileInputFields from './inputFields/MobileInputFields';
 import ClothesInputFields from './inputFields/ClothesInputFields';
 import LaptopInputFields from './inputFields/LaptopInputFields';
+import { useDispatch, useSelector } from 'react-redux';
+import { createNewProduct } from './productSlice';
 
 const AddProduct = () => {
   const [category, setCategory] = useState('');
-  const [tags, setTags] = useState([]);
+  const { name, price, discount, imageUrls, stock, products } = useSelector(
+    (state) => state.product
+  );
+  const dispatch = useDispatch();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newProduct = {
+      name,
+      price,
+      discount,
+      stock,
+      imageUrls,
+    };
 
+    dispatch(createNewProduct(newProduct));
+  };
+  console.log(products);
   const renderFields = () => {
     switch (category) {
       case 'Clothes':
         return <ClothesInputFields />;
       case 'Laptop':
-        return <LaptopInputFields tags={tags} setTags={setTags} />;
+        return <LaptopInputFields />;
 
       case 'Mobile Phones':
-        return <MobileInputFields tags={tags} setTags={setTags} />;
+        return <MobileInputFields />;
       default:
         return <p className="text-gray-500">Please select a category.</p>;
     }
@@ -45,7 +62,7 @@ const AddProduct = () => {
             <option value="Mobile Phones">Mobile Phones</option>
           </select>
         </div>
-        <form className="space-y-6">
+        <form className="space-y-6" onSubmit={handleSubmit}>
           {renderFields()}
           {category === '' || (
             <button

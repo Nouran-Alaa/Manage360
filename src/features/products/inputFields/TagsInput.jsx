@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
+import { colorMap } from '../../../helper/helper';
 
 const TagsInput = ({ tags, setTags, title }) => {
   const [input, setInput] = useState('');
@@ -18,19 +19,6 @@ const TagsInput = ({ tags, setTags, title }) => {
 
   const removeTag = (indexToRemove) => {
     setTags(tags.filter((_, index) => index !== indexToRemove));
-  };
-
-  const colorMap = {
-    white: 'bg-white text-black',
-    black: 'bg-black text-white',
-    green: 'bg-green-500',
-    gray: 'bg-gray-500',
-    blue: 'bg-blue-500',
-    orange: 'bg-orange-500',
-    purple: 'bg-purple-500',
-    yellow: 'bg-yellow-500',
-    red: 'bg-red-500',
-    pink: 'bg-pink-500',
   };
 
   return (

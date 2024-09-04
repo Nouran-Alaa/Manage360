@@ -18,6 +18,8 @@ import MemoryIcon from '@mui/icons-material/Memory';
 import CameraIcon from '@mui/icons-material/Camera';
 import SdStorageIcon from '@mui/icons-material/SdStorage';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import { colorMap } from '../../helper/helper';
 
 const ProductPreview = ({ type }) => {
   const [selectedSize, setSelectedSize] = useState(41);
@@ -50,19 +52,6 @@ const ProductPreview = ({ type }) => {
     mobileRAM,
     imageUrls,
   } = useSelector((state) => state.product);
-
-  const colorMap = {
-    white: 'bg-white text-black',
-    black: 'bg-black text-white',
-    green: 'bg-green-500',
-    gray: 'bg-gray-500',
-    blue: 'bg-blue-500',
-    orange: 'bg-orange-500',
-    purple: 'bg-purple-500',
-    yellow: 'bg-yellow-500',
-    red: 'bg-red-500',
-    pink: 'bg-pink-500',
-  };
 
   return (
     <div className="container mx-auto p-4">
@@ -258,17 +247,17 @@ const ProductPreview = ({ type }) => {
             </>
           )}
 
-          <div className="my-4">
-            <button className="bg-black text-white p-3 rounded-lg flex items-center justify-center w-full">
+          <div className="my-4 flex gap-2">
+            <button className="bg-black text-white p-3 rounded-lg flex items-center justify-center flex-1">
               <ShoppingCartOutlinedIcon className="mr-2" />
               Add to cart
+            </button>
+            <button className="bg-gray-300 mr-4 rounded-lg w-16">
+              <FavoriteBorderOutlinedIcon />
             </button>
           </div>
 
           <div className="flex items-center mt-4">
-            <button className="text-gray-600 mr-4">
-              {/* <FaHeart size={24} /> */}
-            </button>
             <span>Free delivery on orders over $30.00</span>
           </div>
 
@@ -287,7 +276,7 @@ const ProductPreview = ({ type }) => {
           </div>
         </div>
       </div>
-      <div className="border-t h-full mt-7">
+      <div className="border-t h-full mt-7 pt-4">
         <h1 className="text-lg font-semibold">Description</h1>
         <p className="text-sm h-40 overflow-y-auto mt-4">{description}</p>
       </div>

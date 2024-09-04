@@ -38,8 +38,6 @@ const LaptopInputFields = () => {
 
   // Function to handle image upload
 
-
-
   return (
     <>
       <div className="flex gap-4">
@@ -48,6 +46,7 @@ const LaptopInputFields = () => {
             Name:
           </label>
           <input
+            required
             value={name}
             onChange={(e) => dispatch(setName(e.target.value))}
             type="text"
@@ -60,6 +59,7 @@ const LaptopInputFields = () => {
             Brand:
           </label>
           <input
+            required
             value={brand}
             onChange={(e) => dispatch(setBrand(e.target.value))}
             type="text"
@@ -73,6 +73,7 @@ const LaptopInputFields = () => {
           Description:
         </label>
         <textarea
+          required
           value={description}
           onChange={(e) => dispatch(setDescription(e.target.value))}
           name="Description"
@@ -153,6 +154,7 @@ const LaptopInputFields = () => {
             Price:
           </label>
           <input
+            required
             value={price}
             onChange={(e) => dispatch(setPrice(e.target.value))}
             type="number"
@@ -165,6 +167,7 @@ const LaptopInputFields = () => {
             Discount:
           </label>
           <input
+            required
             value={discount}
             onChange={(e) => dispatch(setDiscount(e.target.value))}
             type="number"
@@ -177,6 +180,7 @@ const LaptopInputFields = () => {
             Stock:
           </label>
           <input
+            required
             value={stock}
             onChange={(e) => dispatch(setStock(e.target.value))}
             type="number"

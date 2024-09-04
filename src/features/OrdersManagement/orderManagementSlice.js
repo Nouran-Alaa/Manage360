@@ -21,6 +21,8 @@ const initialState = {
   searchedOrders: [],
   activeTab: '1',
   orderDetailsOpen: false,
+  status: 'idle', // Adding a status state for tracking the fetch status
+  error: null, // Adding an error state for handling errors
 };
 
 const orderManagementSlice = createSlice({
@@ -56,6 +58,7 @@ const orderManagementSlice = createSlice({
     builder
       .addCase(fetchData.pending, (state) => {
         state.status = 'loading';
+        state.error = null;
       })
       .addCase(fetchData.fulfilled, (state, action) => {
         state.status = 'succeeded';

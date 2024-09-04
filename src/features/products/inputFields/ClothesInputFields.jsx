@@ -13,7 +13,6 @@ import {
   setTags,
 } from '../productSlice';
 
-
 const ClothesInputFields = () => {
   const {
     sizes,
@@ -37,6 +36,7 @@ const ClothesInputFields = () => {
             Name:
           </label>
           <input
+            required
             value={name}
             onChange={(e) => dispatch(setName(e.target.value))}
             type="text"
@@ -49,6 +49,7 @@ const ClothesInputFields = () => {
             Brand:
           </label>
           <input
+            required
             value={brand}
             onChange={(e) => dispatch(setBrand(e.target.value))}
             type="text"
@@ -62,6 +63,7 @@ const ClothesInputFields = () => {
           Description:
         </label>
         <textarea
+          required
           value={description}
           onChange={(e) => dispatch(setDescription(e.target.value))}
           name="Description"
@@ -93,6 +95,7 @@ const ClothesInputFields = () => {
             Price:
           </label>
           <input
+            required
             value={price}
             onChange={(e) => dispatch(setPrice(Number(e.target.value)))}
             type="number"
@@ -105,6 +108,7 @@ const ClothesInputFields = () => {
             Discount:
           </label>
           <input
+            required
             value={discount}
             onChange={(e) => dispatch(setDiscount(Number(e.target.value)))}
             type="number"
@@ -117,6 +121,7 @@ const ClothesInputFields = () => {
             Stock:
           </label>
           <input
+            required
             value={stock}
             onChange={(e) => dispatch(setStock(Number(e.target.value)))}
             type="number"

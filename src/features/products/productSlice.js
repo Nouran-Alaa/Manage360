@@ -1,5 +1,20 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
+export const fetchProductData = createAsyncThunk(
+  'data/fetchProductData',
+
+  async (endpoint) => {
+    const response = await fetch(endpoint);
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    const data = await response.json();
+    console.log(data.products);
+    return data.products;
+  }
+);
 const initialState = {
   products: [],
 
@@ -36,6 +51,9 @@ const initialState = {
   stock: 0,
   colors: [],
   imageUrls: [],
+
+  status: 'idle', // Added status
+  error: null, // Added error
 };
 
 const productSlice = createSlice({
@@ -43,7 +61,7 @@ const productSlice = createSlice({
   initialState,
   reducers: {
     createNewProduct(state, action) {
-      state.products = state.products.push(action.payload);
+      state.products.push(action.payload);
     },
 
     //Clothes
@@ -137,6 +155,20 @@ const productSlice = createSlice({
       state.imageUrls = action.payload;
     },
   },
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchProductData.pending, (state) => {
+        state.status = 'loading';
+      })
+      .addCase(fetchProductData.fulfilled, (state, action) => {
+        state.status = 'succeeded';
+        state.products = action.payload;
+      })
+      .addCase(fetchProductData.rejected, (state, action) => {
+        state.status = 'failed';
+        state.error = action.error.message;
+      });
+  },
 });
 
 export const {
@@ -166,6 +198,7 @@ export const {
   setStorage,
   setSelectedStorage,
   setImages,
+  createNewProduct,
 } = productSlice.actions;
 
 export default productSlice.reducer;
