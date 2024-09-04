@@ -133,11 +133,8 @@ const productSlice = createSlice({
     setTags(state, action) {
       state.tags = action.payload;
     },
-    imageUpload(state, action) {
-      state.imageUrls.push(action.payload);
-    },
-    removeImage(state, action) {
-      state.imageUrls = state.imageUrls.filter((_, i) => i !== action.payload);
+    setImages(state, action) {
+      state.imageUrls = action.payload;
     },
   },
 });
@@ -168,8 +165,7 @@ export const {
   setBatteryCapacity,
   setStorage,
   setSelectedStorage,
-  imageUpload,
-  removeImage,
+  setImages,
 } = productSlice.actions;
 
 export default productSlice.reducer;

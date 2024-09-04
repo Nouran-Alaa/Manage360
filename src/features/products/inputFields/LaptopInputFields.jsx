@@ -8,6 +8,7 @@ import {
   setDiscount,
   setGPU,
   setHardDrive,
+  setImages,
   setName,
   setPrice,
   setRAM,
@@ -15,8 +16,6 @@ import {
   setStock,
   setTags,
 } from '../productSlice';
-import { useState } from 'react';
-import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 
 const LaptopInputFields = () => {
   const {
@@ -33,19 +32,14 @@ const LaptopInputFields = () => {
     hardDrive,
     screenSize,
     colors,
+    imageUrls,
   } = useSelector((state) => state.product);
   const dispatch = useDispatch();
 
-  const [images, setImages] = useState([]);
-
   // Function to handle image upload
-  const handleImageUpload = (e) => {
-    const files = Array.from(e.target.files);
-    setImages((prevImages) => [...prevImages, ...files]);
-  };
-  const handleRemoveImage = (index) => {
-    setImages((prevImages) => prevImages.filter((_, i) => i !== index));
-  };
+
+
+
   return (
     <>
       <div className="flex gap-4">
@@ -201,31 +195,11 @@ const LaptopInputFields = () => {
         <label className="block text-sm font-medium text-gray-700">
           Upload Images:
         </label>
-        <input
-          type="file"
-          accept="image/*"
-          multiple
-          onChange={handleImageUpload}
-          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none sm:text-sm"
+        <TagsInput
+          tags={imageUrls}
+          setTags={(tags) => dispatch(setImages(tags))}
+          title="Image URL"
         />
-      </div>
-
-      <div className="mb-4">
-        <label className="block text-sm font-medium text-gray-700">
-          Image Previews:
-        </label>
-        <div className="flex gap-4">
-          {images.map((image, index) => (
-            <div key={index} className="relative">
-              <img
-                src={URL.createObjectURL(image)}
-                alt={`preview-${index}`}
-                className="w-32 h-32 object-cover border"
-              />
-              <CloseOutlinedIcon onClick={() => handleRemoveImage(index)} />
-            </div>
-          ))}
-        </div>
       </div>
     </>
   );

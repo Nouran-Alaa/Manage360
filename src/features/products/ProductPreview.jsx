@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
-
+import { useDispatch, useSelector } from 'react-redux';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { useDispatch, useSelector } from 'react-redux';
+
 import {
   setSelectedCPU,
   setSelectedGPU,
@@ -47,23 +48,8 @@ const ProductPreview = ({ type }) => {
     processor,
     camera,
     mobileRAM,
-    images,
+    imageUrls,
   } = useSelector((state) => state.product);
-
-  const product = {
-    name: 'Shoes Reebok Zig Kinetica 3',
-    brand: 'Reebok',
-    price: 199.0,
-    discount: 12.5,
-    reviews: 42,
-    colors: ['white', 'black', 'gray', 'green', 'purple', 'yellow', 'orange'],
-    sizes: [40.5, 41, 42, 43, 43.5, 44, 44.5, 45, 46],
-    images: [
-      '/path/to/image1.jpg',
-      '/path/to/image2.jpg',
-      '/path/to/image3.jpg',
-    ],
-  };
 
   const colorMap = {
     white: 'bg-white text-black',
@@ -77,12 +63,13 @@ const ProductPreview = ({ type }) => {
     red: 'bg-red-500',
     pink: 'bg-pink-500',
   };
+
   return (
     <div className="container mx-auto p-4">
       <div className="flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 p-5">
           <Carousel showThumbs={false} infiniteLoop>
-            {product.images.map((image, index) => (
+            {imageUrls.map((image, index) => (
               <div key={index}>
                 <img src={image} alt={`Product Image ${index + 1}`} />
               </div>
@@ -101,15 +88,13 @@ const ProductPreview = ({ type }) => {
                   <StarBorderOutlinedIcon key={i} />
                 ))}
             </div>
-            <span className="text-gray-500 ml-2">
-              {product.reviews} reviews
-            </span>
+            <span className="text-gray-500 ml-2">{0} reviews</span>
           </div>
           <div className="my-4 text-sm flex gap-1">
             <span className="font-semibold">Stock: </span>
             <p className="font-bold">{stock}</p>
           </div>
-          <p className="text-3xl font-bold text-gray-800 space-x-2">
+          <p className="text-xl font-bold text-gray-800 space-x-2">
             <span className={discount > 0 ? 'line-through' : ''}>
               $ {price?.toFixed(2)}
             </span>
@@ -302,7 +287,7 @@ const ProductPreview = ({ type }) => {
           </div>
         </div>
       </div>
-      <div className="border-t-2 h-full">
+      <div className="border-t h-full mt-7">
         <h1 className="text-lg font-semibold">Description</h1>
         <p className="text-sm h-40 overflow-y-auto mt-4">{description}</p>
       </div>
