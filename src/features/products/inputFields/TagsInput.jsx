@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 
-const TagsInput = ({ tags, setTags }) => {
+const TagsInput = ({ tags, setTags, title }) => {
   const [input, setInput] = useState('');
 
   const handleKeyDown = (e) => {
@@ -20,12 +20,29 @@ const TagsInput = ({ tags, setTags }) => {
     setTags(tags.filter((_, index) => index !== indexToRemove));
   };
 
+  const colorMap = {
+    white: 'bg-white text-black',
+    black: 'bg-black text-white',
+    green: 'bg-green-500',
+    gray: 'bg-gray-500',
+    blue: 'bg-blue-500',
+    orange: 'bg-orange-500',
+    purple: 'bg-purple-500',
+    yellow: 'bg-yellow-500',
+    red: 'bg-red-500',
+    pink: 'bg-pink-500',
+  };
+
   return (
     <div className="flex flex-wrap items-center border border-gray-300 rounded-md p-2">
       {tags.map((tag, index) => (
         <div
           key={index}
-          className="flex items-center bg-indigo-100 text-indigo-600 px-2 py-[3px] mr-2 mb-2 rounded-full text-sm"
+          className={
+            title === 'color'
+              ? `flex items-center ${colorMap[tag]} px-2 py-[3px] mr-2 mb-2 rounded-full text-sm`
+              : 'flex items-center bg-indigo-100 text-indigo-600 px-2 py-[3px] mr-2 mb-2 rounded-full text-sm'
+          }
         >
           <span>{tag}</span>
           <button
@@ -42,7 +59,9 @@ const TagsInput = ({ tags, setTags }) => {
         value={input}
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={handleKeyDown}
-        placeholder="Press Enter to add tags"
+        placeholder={
+          title ? `Press Enter to add ${title}` : 'Press Enter to add Tag'
+        }
         className="flex-1 min-w-[150px] outline-none border-none focus:ring-0 placeholder:text-sm"
       />
     </div>
