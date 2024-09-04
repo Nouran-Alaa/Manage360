@@ -45,7 +45,7 @@ const Cards = ({ title, num, percentage, data }) => {
       },
     },
     animation: {
-      duration: 1000, // Duration in milliseconds for animations
+      duration: 1500, // Duration in milliseconds for animations
       easing: 'easeInOutQuad', // Easing function to control the speed of the animation
     },
   };
