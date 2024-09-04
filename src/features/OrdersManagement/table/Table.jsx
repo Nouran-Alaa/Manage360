@@ -8,7 +8,7 @@ const Table = ({ orders }) => {
   const [page, setPage] = useState(0); // Start from the first page
   const [rowsPerPage, setRowsPerPage] = useState(10);
 
-  const totalRows = Object.values(orders).flat().length;
+  const totalRows = orders.length;
 
   const handleChangePage = (newPage) => {
     setPage(newPage);
@@ -21,9 +21,10 @@ const Table = ({ orders }) => {
 
   const totalPages = Math.ceil(totalRows / rowsPerPage);
   // Calculate the data to be displayed based on the current page and rowsPerPage
-  const paginatedOrders = Object.values(orders)
-    .flat()
-    .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
+  const paginatedOrders = orders.slice(
+    page * rowsPerPage,
+    page * rowsPerPage + rowsPerPage
+  );
 
   return (
     <div className="overflow-x-scroll">
