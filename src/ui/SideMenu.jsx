@@ -105,7 +105,7 @@ const SideMenu = () => {
           }
         })}
       </ul>
-      <div className="mx-auto">test</div>
+  
     </div>
   );
 };
