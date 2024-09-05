@@ -49,3 +49,16 @@ export function formatDate(isoDate) {
 
   return formattedDate;
 }
+
+export const colorMap = {
+  white: 'bg-white text-black',
+  black: 'bg-black text-white',
+  green: 'bg-green-400',
+  gray: 'bg-gray-400',
+  blue: 'bg-blue-400',
+  orange: 'bg-orange-400',
+  purple: 'bg-purple-400',
+  yellow: 'bg-yellow-400',
+  red: 'bg-red-400',
+  pink: 'bg-pink-400',
+};
