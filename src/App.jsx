@@ -1,5 +1,5 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import AppLayout from './ui/AppLayout';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AppLayout from "./ui/AppLayout";
 
 function App() {
   return (
