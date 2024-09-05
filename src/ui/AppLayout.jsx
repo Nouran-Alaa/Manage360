@@ -1,23 +1,25 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
 
-import Navbar from './Navbar';
-import SideMenu from './SideMenu';
-import Dashboard from '../features/dashboard/Dashboard';
+import Navbar from "./Navbar";
+import SideMenu from "./SideMenu";
+import Dashboard from "../features/dashboard/Dashboard";
 
-import OrderManagement from '../features/OrdersManagement/OrderManagement';
-import PendingOrders from '../features/OrdersManagement/PendingOrders';
-import ShippedOrders from '../features/OrdersManagement/ShippedOrders';
-import DeliveredOrders from '../features/OrdersManagement/DeliveredOrders';
-import CancelledOrders from '../features/OrdersManagement/CancelledOrders';
-import AllOrders from '../features/OrdersManagement/AllOrders';
+import OrderManagement from "../features/OrdersManagement/OrderManagement";
+import PendingOrders from "../features/OrdersManagement/PendingOrders";
+import ShippedOrders from "../features/OrdersManagement/ShippedOrders";
+import DeliveredOrders from "../features/OrdersManagement/DeliveredOrders";
+import CancelledOrders from "../features/OrdersManagement/CancelledOrders";
+import AllOrders from "../features/OrdersManagement/AllOrders";
 
-import Customers from '../features/customers/Customers';
-import AddProduct from '../features/products/AddProduct';
-import ProductList from '../features/products/ProductList';
-import Profile from '../features/user/Profile';
-import SignUp from '../features/auth/sign-up/SignUp';
-import SignIn from '../features/auth/sign-in/SignIn';
-import { useSelector } from 'react-redux';
+import Customers from "../features/customers/Customers";
+import AddProduct from "../features/products/AddProduct";
+import ProductList from "../features/products/ProductList";
+import Profile from "../features/user/Profile";
+// import SignUp from "../features/auth/sign-up/SignUp";
+// import SignIn from "../features/auth/sign-in/SignIn";
+import Login from "../features/user/Login";
+import Signup from "../features/user/Signup";
+import { useSelector } from "react-redux";
 
 const AppLayout = () => {
   const { isSideMenuOpen } = useSelector((state) => state.ui);
@@ -30,7 +32,7 @@ const AppLayout = () => {
         </div>
         <div
           className={`flex-grow transition-all duration-300 ease-in-out ${
-            isSideMenuOpen ? 'ml-64' : 'ml-0'
+            isSideMenuOpen ? "ml-64" : "ml-0"
           }`}
         >
           {/* <Route path="/sign-up" element={<SignUp />} />
@@ -49,6 +51,8 @@ const AppLayout = () => {
             </Route>
             <Route path="/add-products" element={<AddProduct />} />
             <Route path="/products-list" element={<ProductList />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
           </Routes>
         </div>
       </main>
