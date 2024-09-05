@@ -14,6 +14,7 @@ import { setQuery } from '../OrdersManagement/orderManagementSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { Typography } from '@mui/material';
 import { fetchProductData } from './productSlice';
+import SwitchActive from './Switch';
 
 function descendingComparator(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) return -1;
@@ -32,12 +33,10 @@ const ProductList = () => {
   const [orderBy, setOrderBy] = useState('calories');
   const [selected, setSelected] = useState([]);
   const [page, setPage] = useState(0);
+  const [rowsPerPage, setRowsPerPage] = useState(5);
 
   const dispatch = useDispatch();
-
-  const { query, products } = useSelector((state) => state.product);
-
-  const [rowsPerPage, setRowsPerPage] = useState(5);
+  const { query, products, status } = useSelector((state) => state.product);
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === 'asc';
@@ -96,9 +95,16 @@ const ProductList = () => {
     [order, orderBy, page, rowsPerPage, products]
   );
 
+  // useEffect(() => {
+  //   dispatch(fetchProductData('https://dummyjson.com/products'));
+  //   console.log('fetchProductData');
+  // }, [dispatch]);
+
   useEffect(() => {
-    dispatch(fetchProductData('https://dummyjson.com/products'));
-  }, [dispatch]);
+    if (status === 'idle') {
+      dispatch(fetchProductData('https://dummyjson.com/products'));
+    }
+  }, [dispatch, status]);
 
   return (
     <Box sx={{ width: '100%', padding: '16px', fontFamily: 'Public Sans' }}>
@@ -135,7 +141,7 @@ const ProductList = () => {
                 return (
                   <TableRow
                     hover
-                    onClick={(event) => handleClick(event, products.id)}
+                    onClick={(event) => handleClick(event, row.id)}
                     role="checkbox"
                     aria-checked={isItemSelected}
                     tabIndex={-1}
@@ -160,7 +166,12 @@ const ProductList = () => {
                       style={{ display: 'flex', alignItems: 'center' }}
                     >
                       <img
-                        src={row.thumbnail || row.imagesUrl[0]}
+                        src="https://picsum.photos/200"
+                        // src={
+                        //   row.thumbnail || row.imageUrls?.length > 0
+                        //     ? row.imageUrls[0]
+                        //     : ''
+                        // }
                         alt={row.title}
                         style={{ width: '40px', height: '50px' }}
                       />
@@ -180,7 +191,9 @@ const ProductList = () => {
                       {row.discount || row.discountPercentage}%
                     </TableCell>
                     <TableCell align="center">{row.stock}</TableCell>
-                    <TableCell align="center">Active</TableCell>
+                    <TableCell align="center">
+                      <SwitchActive />
+                    </TableCell>
                   </TableRow>
                 );
               })}

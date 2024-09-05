@@ -12,6 +12,7 @@ const AddProduct = () => {
     (state) => state.product
   );
   const dispatch = useDispatch();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const newProduct = {

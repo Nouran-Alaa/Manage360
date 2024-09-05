@@ -3,7 +3,13 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 export const fetchProductData = createAsyncThunk(
   'data/fetchProductData',
 
-  async (endpoint) => {
+  async (endpoint, { getState }) => {
+    const state = getState();
+    // Check if products have already been fetched
+    if (state.product.products.length > 0) {
+      return; // Don't fetch again if products are already loaded
+    }
+    
     const response = await fetch(endpoint);
 
     if (!response.ok) {
@@ -127,7 +133,6 @@ const productSlice = createSlice({
     setSelectedStorage(state, action) {
       state.selectedStorage = action.payload;
     },
-    // Laptop and Mobile
 
     //All products
     setName(state, action) {
