@@ -102,7 +102,7 @@ const ProductList = () => {
           onChange={(e) => dispatch(setQuery(e.target.value))}
           type="text"
           placeholder="Search by product title or ID"
-          className="p-2 border border-gray-300 rounded-md"
+          className="p-2 md:w-[250px] border border-gray-300 rounded-md"
         />
       </div>
       <Paper sx={{ width: '100%', mb: 2, borderRadius: '12px' }}>
