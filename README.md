@@ -72,8 +72,8 @@
 
 ## 📸 Screenshots
 
-### Dashboard
-![Dashboard Screenshot](./assets/dashboard.png)
+### Add New Product
+![Dashboard Screenshot](./public/Add-New-Product-Screenshot.png)
 
 ### Order Management
 ![Orders Screenshot](./public/orderManagement-screenshot.png)
