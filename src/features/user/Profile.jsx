@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { PencilSquareIcon } from '@heroicons/react/24/outline';
+import { Link } from 'react-router-dom';
 
 const Profile = () => {
   const image = 'https://picsum.photos/200/300';
@@ -234,6 +235,12 @@ const Profile = () => {
                 )}
               </div>
             </div>
+            <Link
+              to="/sign-in"
+              className="text-red-500 border-2 border-red-500 px-2 py-5 flex justify-center items-center text-md font-semibold rounded-lg"
+            >
+              Sign Out
+            </Link>
           </div>
         </div>
       </div>

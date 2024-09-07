@@ -15,8 +15,7 @@ import Customers from '../features/customers/Customers';
 import AddProduct from '../features/products/AddProduct';
 import ProductList from '../features/products/ProductList';
 import Profile from '../features/user/Profile';
-// import SignUp from "../features/auth/sign-up/SignUp";
-// import SignIn from "../features/auth/sign-in/SignIn";
+
 import Login from '../features/user/Login';
 import Signup from '../features/user/Signup';
 import { useSelector } from 'react-redux';
@@ -35,11 +34,11 @@ const AppLayout = () => {
             isSideMenuOpen ? 'ml-64' : 'ml-0'
           }`}
         >
-          {/* <Route path="/sign-up" element={<SignUp />} />
-            <Route path="/sign-in" element={<SignIn />} /> */}
+          {/* <Route path="/sign-up" element={<SignUp />} /> */}
+
           <Navbar />
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/customers" element={<Customers />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/orders" element={<OrderManagement />}>

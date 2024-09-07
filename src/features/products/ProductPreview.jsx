@@ -29,7 +29,7 @@ const ProductPreview = ({ type }) => {
     sizes,
     colors,
     tags,
-    name,
+    title,
     brand,
     description,
     price,
@@ -68,7 +68,7 @@ const ProductPreview = ({ type }) => {
 
         <div className="w-full md:w-1/2 md:pl-8">
           <h1 className="text-md font-semiBold">{brand}</h1>
-          <h1 className="text-2xl font-bold capitalize">{name}</h1>
+          <h1 className="text-2xl font-bold capitalize">{title}</h1>
           <div className="flex items-center my-2">
             <div className="flex text-yellow-500">
               {Array(5)

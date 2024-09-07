@@ -14,7 +14,7 @@ const navigation = [
     title: 'Main items',
   },
   {
-    segment: '',
+    segment: 'dashboard',
     title: 'Dashboard',
     icon: <HomeOutlinedIcon />,
   },
