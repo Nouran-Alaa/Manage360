@@ -73,7 +73,7 @@
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard Screenshot](./assets/dashboard.png)
+![Dashboard Screenshot](./public/Add-New-Product-Screenshot.png)
 
 ### Order Management
 ![Orders Screenshot](./public/orderManagement-screenshot.png)
