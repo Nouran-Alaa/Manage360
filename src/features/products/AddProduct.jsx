@@ -46,13 +46,12 @@ const AddProduct = () => {
     }
   };
   return (
-    <div className="grid grid-cols-[1fr,1fr] p-6 gap-10">
+    <div className=" grid lg:grid-cols-[1fr,1fr] p-6 gap-10">
       <div className="p-6 bg-white rounded-md">
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-bold mb-6 text-gray-800">
             Add New Product
           </h1>
-          <button>Draft</button>
         </div>
 
         <div className="mb-6">
@@ -81,7 +80,7 @@ const AddProduct = () => {
           )}
         </form>
       </div>
-      <div className="bg-white rounded-lg">
+      <div className="bg-white rounded-lg hidden lg:block">
         <ProductPreview type={category} />
       </div>
     </div>
