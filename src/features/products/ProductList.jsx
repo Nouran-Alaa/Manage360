@@ -7,78 +7,71 @@ import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Checkbox from '@mui/material/Checkbox';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo } from 'react';
 import EnhancedTableToolbar from './table/EnhancedTableToolbar';
 import EnhancedTableHead from './table/EnhancedTableHead';
-import { setQuery } from '../OrdersManagement/orderManagementSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { Typography } from '@mui/material';
 import { fetchProductData } from './productSlice';
 import SwitchActive from './Switch';
-
-function descendingComparator(a, b, orderBy) {
-  if (b[orderBy] < a[orderBy]) return -1;
-  if (b[orderBy] > a[orderBy]) return 1;
-  return 0;
-}
-
-function getComparator(order, orderBy) {
-  return order === 'desc'
-    ? (a, b) => descendingComparator(a, b, orderBy)
-    : (a, b) => -descendingComparator(a, b, orderBy);
-}
+import {
+  setQuery,
+  setOrder,
+  toggleSelect,
+  selectAll,
+  clearSelected,
+  setPage,
+  setRowsPerPage,
+} from './productSlice';
 
 const ProductList = () => {
-  const [order, setOrder] = useState('asc');
-  const [orderBy, setOrderBy] = useState('calories');
-  const [selected, setSelected] = useState([]);
-  const [page, setPage] = useState(0);
-  const [rowsPerPage, setRowsPerPage] = useState(5);
-
   const dispatch = useDispatch();
-  const { query, products, status } = useSelector((state) => state.product);
+  const {
+    query,
+    products,
+    status,
+    selected,
+    order,
+    orderBy,
+    page,
+    rowsPerPage,
+  } = useSelector((state) => state.product);
+
+  const filteredProducts = useMemo(() => {
+    return products.filter((product) => {
+      const lowerQuery = query.toLowerCase();
+      return (
+        product.title?.toLowerCase().includes(lowerQuery) ||
+        product.id.toString().includes(lowerQuery)
+      );
+    });
+  }, [products, query]);
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === 'asc';
-    setOrder(isAsc ? 'desc' : 'asc');
-    setOrderBy(property);
+    dispatch(setOrder({ order: isAsc ? 'desc' : 'asc', orderBy: property }));
   };
 
   const handleSelectAllClick = (event) => {
     if (event.target.checked) {
-      const newSelected = products.map((n) => n.id);
-      setSelected(newSelected);
+      const newSelected = filteredProducts.map((n) => n.id);
+      dispatch(selectAll(newSelected));
       return;
     }
-    setSelected([]);
+    dispatch(clearSelected());
   };
 
   const handleClick = (event, id) => {
-    const selectedIndex = selected.indexOf(id);
-    let newSelected = [];
-
-    if (selectedIndex === -1) {
-      newSelected = newSelected.concat(selected, id);
-    } else if (selectedIndex === 0) {
-      newSelected = newSelected.concat(selected.slice(1));
-    } else if (selectedIndex === selected.length - 1) {
-      newSelected = newSelected.concat(selected.slice(0, -1));
-    } else if (selectedIndex > 0) {
-      newSelected = newSelected.concat(
-        selected.slice(0, selectedIndex),
-        selected.slice(selectedIndex + 1)
-      );
-    }
-    setSelected(newSelected);
+    dispatch(toggleSelect(id));
   };
 
   const handleChangePage = (event, newPage) => {
-    setPage(newPage);
+    dispatch(setPage(newPage));
   };
 
   const handleChangeRowsPerPage = (event) => {
-    setRowsPerPage(parseInt(event.target.value, 10));
-    setPage(0);
+    dispatch(setRowsPerPage(parseInt(event.target.value, 10)));
+    dispatch(setPage(0));
   };
 
   const isSelected = (id) => selected.indexOf(id) !== -1;
@@ -87,18 +80,13 @@ const ProductList = () => {
   const emptyRows =
     page > 0 ? Math.max(0, (1 + page) * rowsPerPage - products.length) : 0;
 
-  const visibleRows = useMemo(
-    () =>
-      [...products]
-        .sort(getComparator(order, orderBy))
-        .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage),
-    [order, orderBy, page, rowsPerPage, products]
-  );
-
-  // useEffect(() => {
-  //   dispatch(fetchProductData('https://dummyjson.com/products'));
-  //   console.log('fetchProductData');
-  // }, [dispatch]);
+  const visibleRows = useMemo(() => {
+    return [...filteredProducts]
+      .sort((a, b) =>
+        order === 'desc' ? b[orderBy] - a[orderBy] : a[orderBy] - b[orderBy]
+      )
+      .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
+  }, [filteredProducts, order, orderBy, page, rowsPerPage]);
 
   useEffect(() => {
     if (status === 'idle') {
@@ -113,12 +101,15 @@ const ProductList = () => {
           value={query}
           onChange={(e) => dispatch(setQuery(e.target.value))}
           type="text"
-          placeholder="Search by order id"
+          placeholder="Search by product title or ID"
           className="p-2 border border-gray-300 rounded-md"
         />
       </div>
       <Paper sx={{ width: '100%', mb: 2, borderRadius: '12px' }}>
-        <EnhancedTableToolbar numSelected={selected.length} />
+        <EnhancedTableToolbar
+          numSelected={selected.length}
+          selected={selected}
+        />
         <TableContainer>
           <Table
             sx={{ minWidth: 750 }}
@@ -131,7 +122,7 @@ const ProductList = () => {
               orderBy={orderBy}
               onSelectAllClick={handleSelectAllClick}
               onRequestSort={handleRequestSort}
-              rowCount={products.length}
+              rowCount={filteredProducts.length}
             />
             <TableBody>
               {visibleRows.map((row, index) => {
@@ -166,12 +157,11 @@ const ProductList = () => {
                       style={{ display: 'flex', alignItems: 'center' }}
                     >
                       <img
-                        src="https://picsum.photos/200"
-                        // src={
-                        //   row.thumbnail || row.imageUrls?.length > 0
-                        //     ? row.imageUrls[0]
-                        //     : ''
-                        // }
+                        src={
+                          row.imageUrls?.length >= 2
+                            ? row.imageUrls[0]
+                            : row.imageUrls || row.thumbnail
+                        }
                         alt={row.title}
                         style={{ width: '40px', height: '50px' }}
                       />
@@ -182,7 +172,7 @@ const ProductList = () => {
                           fontSize: '13px',
                         }}
                       >
-                        {row.name || row.title}
+                        {row.title}
                       </Typography>
                     </TableCell>
 
@@ -212,7 +202,7 @@ const ProductList = () => {
         <TablePagination
           rowsPerPageOptions={[5, 10, 25]}
           component="div"
-          count={products.length}
+          count={filteredProducts.length}
           rowsPerPage={rowsPerPage}
           page={page}
           onPageChange={handleChangePage}

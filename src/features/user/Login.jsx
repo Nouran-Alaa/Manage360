@@ -1,42 +1,42 @@
-import { useState } from "react";
-import { Field, Form, Formik } from "formik";
-import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGoogle, faApple } from "@fortawesome/free-brands-svg-icons";
+import { useState } from 'react';
+import { Field, Form, Formik } from 'formik';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle, faApple } from '@fortawesome/free-brands-svg-icons';
 // import Loader from "../../ui/Loader";
 
 function Login() {
   // const [isLoading, setIsLoading] = useState(false);
-  const [loginError, setLoginError] = useState("");
+  const [loginError, setLoginError] = useState('');
   const navigate = useNavigate();
 
   const handleSubmit = (values) => {
-    const storedUserName = localStorage.getItem("userName");
-    const storedPassword = localStorage.getItem("password");
+    const storedUserName = localStorage.getItem('userName');
+    const storedPassword = localStorage.getItem('password');
 
     if (
       values.userName.toLowerCase() === storedUserName &&
       values.password.toLowerCase() === storedPassword
     ) {
-      setLoginError(""); // Clear any previous errors
+      setLoginError(''); // Clear any previous errors
       // setIsLoading(true);
       setTimeout(() => {
         // setIsLoading(false);
-        navigate("/dashboard"); // Navigate to the AppLayout route
+        navigate('/dashboard'); // Navigate to the AppLayout route
       }, 3000); // Show loader for 3 seconds
     } else {
-      setLoginError("Invalid username or password");
+      setLoginError('Invalid username or password');
     }
   };
 
   function handleValidate(values) {
     const errors = {};
     if (!values.userName) {
-      errors.userName = "Username is required";
+      errors.userName = 'Username is required';
     }
     if (!values.password) {
-      errors.password = "Password is required";
+      errors.password = 'Password is required';
     }
     return errors;
   }
@@ -50,7 +50,7 @@ function Login() {
       <div className="mx-auto w-[300px] p-4 md:p-6 lg:mx-auto lg:w-1/4">
         {/* Form */}
         <Formik
-          initialValues={{ userName: "", password: "" }}
+          initialValues={{ userName: '', password: '' }}
           onSubmit={handleSubmit}
           validate={handleValidate}
           validateOnBlur={false}
@@ -58,22 +58,18 @@ function Login() {
           {({ errors }) => (
             <Form onSubmit={handleSubmit}>
               {/* <h1 className="font-ubuntu mb-8 text-2xl font-extrabold">Taskify</h1> */}
-              <img
-                className="mb-4 w-[130px]"
-                src="./images/logo.png"
-                alt="Logo"
-              />
+              <img className="mb-4 w-[180px]" src="./Asset7.png" alt="Logo" />
               <p className="mb-8 text-2xl font-bold">Sign In</p>
               <div className="mb-3 flex flex-col gap-3">
                 <label className="text-sm font-semibold">Username</label>
                 <Field
                   placeholder="Enter username"
-                  className="input w-full"
+                  className="input w-full border"
                   type="text"
                   name="userName"
                 />
                 {errors.userName && (
-                  <p style={{ color: "red" }}>{errors.userName}</p>
+                  <p style={{ color: 'red' }}>{errors.userName}</p>
                 )}
               </div>
               <div className="mb-3 flex flex-col gap-3">
@@ -85,7 +81,7 @@ function Login() {
                   name="password"
                 />
                 {errors.password && (
-                  <p style={{ color: "red" }}>{errors.password}</p>
+                  <p style={{ color: 'red' }}>{errors.password}</p>
                 )}
               </div>
               <button
@@ -94,7 +90,7 @@ function Login() {
               >
                 Log in to Taskify
               </button>
-              {loginError && <p style={{ color: "red" }}>{loginError}</p>}
+              {loginError && <p style={{ color: 'red' }}>{loginError}</p>}
             </Form>
           )}
         </Formik>
@@ -122,7 +118,7 @@ function Login() {
             href="#"
             className="flex w-full items-center justify-center space-x-2 rounded-full border border-stone-300 px-4 py-2 text-center text-sm font-semibold tracking-wide text-stone-800 outline-none transition-colors duration-300 hover:bg-stone-800 hover:text-white disabled:cursor-not-allowed md:px-6 md:py-3"
           >
-            <FontAwesomeIcon icon={faApple} style={{ fontSize: "20px" }} />
+            <FontAwesomeIcon icon={faApple} style={{ fontSize: '20px' }} />
             <span>Log in with Apple</span>
           </a>
         </div>

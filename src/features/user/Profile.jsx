@@ -1,19 +1,19 @@
-import React, { useState } from "react";
-import { PencilSquareIcon } from "@heroicons/react/24/outline";
+import { useState } from 'react';
+import { PencilSquareIcon } from '@heroicons/react/24/outline';
 
 const Profile = () => {
-  const image = "https://picsum.photos/200/300";
+  const image = 'https://picsum.photos/200/300';
 
   // Load initial profile information from localStorage or default values
-  const [firstName, setFirstName] = useState(localStorage.getItem("firstName"));
-  const [lastName, setLastName] = useState(localStorage.getItem("lastName"));
-  const [email, setEmail] = useState(localStorage.getItem("email"));
-  const [phone, setPhone] = useState(localStorage.getItem("phone"));
-  const [bio, setBio] = useState(localStorage.getItem("bio"));
-  const [country, setCountry] = useState(localStorage.getItem("country"));
-  const [city, setCity] = useState(localStorage.getItem("city"));
+  const [firstName, setFirstName] = useState(localStorage.getItem('firstName'));
+  const [lastName, setLastName] = useState(localStorage.getItem('lastName'));
+  const [email, setEmail] = useState(localStorage.getItem('email'));
+  const [phone, setPhone] = useState(localStorage.getItem('phone'));
+  const [bio, setBio] = useState(localStorage.getItem('bio'));
+  const [country, setCountry] = useState(localStorage.getItem('country'));
+  const [city, setCity] = useState(localStorage.getItem('city'));
   const [postalCode, setPostalCode] = useState(
-    localStorage.getItem("postalCode"),
+    localStorage.getItem('postalCode')
   );
 
   // State to manage editing
@@ -22,24 +22,24 @@ const Profile = () => {
 
   // Function to save personal information to localStorage
   const handleSavePersonalInfo = () => {
-    localStorage.setItem("firstName", firstName);
-    localStorage.setItem("lastName", lastName);
-    localStorage.setItem("email", email);
-    localStorage.setItem("phone", phone);
-    localStorage.setItem("bio", bio);
+    localStorage.setItem('firstName', firstName);
+    localStorage.setItem('lastName', lastName);
+    localStorage.setItem('email', email);
+    localStorage.setItem('phone', phone);
+    localStorage.setItem('bio', bio);
     setIsEditingPersonalInfo(false);
   };
 
   // Function to save address information to localStorage
   const handleSaveAddress = () => {
-    localStorage.setItem("country", country);
-    localStorage.setItem("city", city);
-    localStorage.setItem("postalCode", postalCode);
+    localStorage.setItem('country', country);
+    localStorage.setItem('city', city);
+    localStorage.setItem('postalCode', postalCode);
     setIsEditingAddress(false);
   };
 
   return (
-    <div className="container mx-auto bg-gray-200 px-6 py-12">
+    <div className="container mx-auto px-6 py-12">
       <div className="mb-10 overflow-hidden rounded-2xl bg-white shadow-lg">
         <div className="p-8">
           <div className="grid grid-cols-1 gap-10">
@@ -70,7 +70,7 @@ const Profile = () => {
                   className="flex items-center justify-center gap-1 space-x-2 rounded-full border border-stone-300 px-4 py-2 text-center text-sm font-semibold tracking-wide text-stone-800 outline-none transition-colors duration-300 hover:bg-stone-800 hover:text-white"
                 >
                   <PencilSquareIcon className="h-6 w-6 text-gray-400" />
-                  {isEditingPersonalInfo ? "Cancel" : "Edit"}
+                  {isEditingPersonalInfo ? 'Cancel' : 'Edit'}
                 </button>
               </div>
               <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
@@ -170,7 +170,7 @@ const Profile = () => {
                   className="flex items-center justify-center gap-1 space-x-2 rounded-full border border-stone-300 px-4 py-2 text-center text-sm font-semibold tracking-wide text-stone-800 outline-none transition-colors duration-300 hover:bg-stone-800 hover:text-white"
                 >
                   <PencilSquareIcon className="h-6 w-6 text-gray-400" />
-                  {isEditingAddress ? "Cancel" : "Edit"}
+                  {isEditingAddress ? 'Cancel' : 'Edit'}
                 </button>
               </div>
               <div className="grid grid-cols-1 gap-5 md:grid-cols-2">

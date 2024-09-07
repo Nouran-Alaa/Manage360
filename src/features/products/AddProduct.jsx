@@ -8,15 +8,21 @@ import { createNewProduct } from './productSlice';
 
 const AddProduct = () => {
   const [category, setCategory] = useState('');
-  const { name, price, discount, imageUrls, stock, products } = useSelector(
+  const { title, price, discount, imageUrls, stock, products } = useSelector(
     (state) => state.product
   );
   const dispatch = useDispatch();
 
+  const generateId = () =>
+    `id-${Math.random().toString(36).substr(2, 9)}-${Date.now()}`;
+
+  const GeneratedId = generateId();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const newProduct = {
-      name,
+      title,
+      id: GeneratedId,
       price,
       discount,
       stock,

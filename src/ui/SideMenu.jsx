@@ -14,7 +14,7 @@ const navigation = [
     title: 'Main items',
   },
   {
-    segment: 'dashboard',
+    segment: '',
     title: 'Dashboard',
     icon: <HomeOutlinedIcon />,
   },
@@ -105,7 +105,6 @@ const SideMenu = () => {
           }
         })}
       </ul>
-  
     </div>
   );
 };

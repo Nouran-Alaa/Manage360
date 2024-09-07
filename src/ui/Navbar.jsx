@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
@@ -52,9 +52,13 @@ const Navbar = () => {
             <NotificationsNoneOutlinedIcon />
           </button>
 
-          <button onClick={toggleMenu} className="relative text-gray-700">
+          <Link
+            to="/profile"
+            onClick={toggleMenu}
+            className="relative text-gray-700"
+          >
             <AccountCircleOutlinedIcon className="text-lg" />
-          </button>
+          </Link>
         </div>
       </div>
 

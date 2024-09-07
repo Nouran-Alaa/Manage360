@@ -24,9 +24,6 @@ const ShippedOrders = () => {
           placeholder="Search by order id"
           className="p-2 border border-gray-300 rounded-md"
         />
-        <button className="p-2 border border-gray-300 rounded-md">
-          Filter by date range
-        </button>
       </div>
       <Table orders={shippedOrders} />
     </div>

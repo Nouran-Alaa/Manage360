@@ -20,7 +20,7 @@ import TagsInput from './TagsInput';
 const MobileInputFields = () => {
   const {
     tags,
-    name,
+    title,
     brand,
     description,
     price,
@@ -46,7 +46,7 @@ const MobileInputFields = () => {
           </label>
           <input
             required
-            value={name}
+            value={title}
             onChange={(e) => dispatch(setName(e.target.value))}
             type="text"
             name="name"

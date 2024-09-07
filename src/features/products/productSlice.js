@@ -2,14 +2,13 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 export const fetchProductData = createAsyncThunk(
   'data/fetchProductData',
-
   async (endpoint, { getState }) => {
     const state = getState();
     // Check if products have already been fetched
     if (state.product.products.length > 0) {
       return; // Don't fetch again if products are already loaded
     }
-    
+
     const response = await fetch(endpoint);
 
     if (!response.ok) {
@@ -17,12 +16,20 @@ export const fetchProductData = createAsyncThunk(
     }
 
     const data = await response.json();
-    console.log(data.products);
     return data.products;
   }
 );
+
 const initialState = {
   products: [],
+  query: '',
+  status: 'idle',
+  error: null,
+  selected: [],
+  order: 'asc',
+  orderBy: 'calories',
+  page: 0,
+  rowsPerPage: 5,
 
   //Clothes
   sizes: [],
@@ -49,7 +56,8 @@ const initialState = {
 
   //All
   tags: [],
-  name: '',
+  title: '',
+  id: '',
   brand: '',
   description: '',
   price: 0,
@@ -57,9 +65,6 @@ const initialState = {
   stock: 0,
   colors: [],
   imageUrls: [],
-
-  status: 'idle', // Added status
-  error: null, // Added error
 };
 
 const productSlice = createSlice({
@@ -68,6 +73,38 @@ const productSlice = createSlice({
   reducers: {
     createNewProduct(state, action) {
       state.products.push(action.payload);
+    },
+    setQuery(state, action) {
+      state.query = action.payload;
+    },
+    setOrder(state, action) {
+      const { order, orderBy } = action.payload;
+      state.order = order;
+      state.orderBy = orderBy;
+    },
+    setSelected(state, action) {
+      state.selected = action.payload;
+    },
+    setPage(state, action) {
+      state.page = action.payload;
+    },
+    setRowsPerPage(state, action) {
+      state.rowsPerPage = action.payload;
+    },
+    toggleSelect(state, action) {
+      const id = action.payload;
+      const selectedIndex = state.selected.indexOf(id);
+      if (selectedIndex === -1) {
+        state.selected.push(id);
+      } else {
+        state.selected.splice(selectedIndex, 1);
+      }
+    },
+    selectAll(state, action) {
+      state.selected = action.payload;
+    },
+    clearSelected(state) {
+      state.selected = [];
     },
 
     //Clothes
@@ -136,7 +173,7 @@ const productSlice = createSlice({
 
     //All products
     setName(state, action) {
-      state.name = action.payload;
+      state.title = action.payload;
     },
     setBrand(state, action) {
       state.brand = action.payload;
@@ -158,6 +195,11 @@ const productSlice = createSlice({
     },
     setImages(state, action) {
       state.imageUrls = action.payload;
+    },
+    deleteProducts(state, action) {
+      state.products = state.products.filter(
+        (product) => !action.payload.includes(product.id)
+      );
     },
   },
   extraReducers: (builder) => {
@@ -204,6 +246,15 @@ export const {
   setSelectedStorage,
   setImages,
   createNewProduct,
+  deleteProducts,
+  setQuery,
+  setOrder,
+  setSelected,
+  setPage,
+  setRowsPerPage,
+  toggleSelect,
+  selectAll,
+  clearSelected,
 } = productSlice.actions;
 
 export default productSlice.reducer;
