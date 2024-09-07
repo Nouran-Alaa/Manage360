@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Link, useLocation } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
@@ -74,29 +75,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-{
-  /* <div className="relative">
-<div className="flex items-center text-white">
-  <input
-    type="text"
-    placeholder="Search…"
-    className="bg-white bg-opacity-10 rounded-full px-3 py-1 text-sm w-full focus:outline-none"
-  />
-  <svg
-    className="absolute top-1/2 transform -translate-y-1/2 right-3 h-5 w-5 text-gray-300"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-      d="M8 16l-4 4m0 0l4-4m-4 4V8a4 4 0 114 4h.01"
-    ></path>
-  </svg>
-</div>
-</div> */
-}
