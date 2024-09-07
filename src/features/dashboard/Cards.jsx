@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
+
 import ArrowUpwardOutlinedIcon from '@mui/icons-material/ArrowUpwardOutlined';
 import AnimatedNumbers from './AnimatedNumbers'; // تأكد من أنك تستطيع ضبط سرعة الرسوم المتحركة هنا
 import { Line } from 'react-chartjs-2';
@@ -14,17 +14,25 @@ import {
   Legend,
 } from 'chart.js';
 
-ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
 const Cards = ({ title, num, percentage, data }) => {
-  const labels = data.map(entry => entry.name);
+  const labels = data.map((entry) => entry.name);
 
   const chartData = {
     labels: labels,
     datasets: [
       {
         label: title,
-        data: data.map(entry => entry.value),
+        data: data.map((entry) => entry.value),
         fill: false,
         borderColor: 'rgb(74, 222, 128)', // Adjust color as needed
         tension: 0.1,

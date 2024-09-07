@@ -18,7 +18,7 @@ const ClothesInputFields = () => {
     sizes,
     colors,
     tags,
-    name,
+    title,
     brand,
     description,
     price,
@@ -37,7 +37,7 @@ const ClothesInputFields = () => {
           </label>
           <input
             required
-            value={name}
+            value={title}
             onChange={(e) => dispatch(setName(e.target.value))}
             type="text"
             name="name"

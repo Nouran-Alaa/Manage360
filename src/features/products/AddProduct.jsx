@@ -8,14 +8,21 @@ import { createNewProduct } from './productSlice';
 
 const AddProduct = () => {
   const [category, setCategory] = useState('');
-  const { name, price, discount, imageUrls, stock, products } = useSelector(
+  const { title, price, discount, imageUrls, stock, products } = useSelector(
     (state) => state.product
   );
   const dispatch = useDispatch();
+
+  const generateId = () =>
+    `id-${Math.random().toString(36).substr(2, 9)}-${Date.now()}`;
+
+  const GeneratedId = generateId();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const newProduct = {
-      name,
+      title,
+      id: GeneratedId,
       price,
       discount,
       stock,
@@ -39,13 +46,12 @@ const AddProduct = () => {
     }
   };
   return (
-    <div className="grid grid-cols-[1fr,1fr] p-6 gap-10">
+    <div className=" grid lg:grid-cols-[1fr,1fr] p-6 gap-10">
       <div className="p-6 bg-white rounded-md">
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-bold mb-6 text-gray-800">
             Add New Product
           </h1>
-          <button>Draft</button>
         </div>
 
         <div className="mb-6">
@@ -74,7 +80,7 @@ const AddProduct = () => {
           )}
         </form>
       </div>
-      <div className="bg-white rounded-lg">
+      <div className="bg-white rounded-lg hidden lg:block">
         <ProductPreview type={category} />
       </div>
     </div>

@@ -105,7 +105,6 @@ const SideMenu = () => {
           }
         })}
       </ul>
-  
     </div>
   );
 };

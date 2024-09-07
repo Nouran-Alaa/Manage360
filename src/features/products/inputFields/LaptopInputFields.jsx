@@ -20,7 +20,7 @@ import {
 const LaptopInputFields = () => {
   const {
     tags,
-    name,
+    title,
     brand,
     description,
     price,
@@ -47,7 +47,7 @@ const LaptopInputFields = () => {
           </label>
           <input
             required
-            value={name}
+            value={title}
             onChange={(e) => dispatch(setName(e.target.value))}
             type="text"
             name="name"
