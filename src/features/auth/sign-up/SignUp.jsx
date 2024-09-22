@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
+import Loader from '../../../ui/Loader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faApple } from '@fortawesome/free-brands-svg-icons';
 import { Link, useNavigate } from 'react-router-dom';
-import Loader from '../../../ui/loader';
-import { useFormik } from 'formik';
-import * as Yup from 'yup';
+
 
 // Validation schema using Yup
 const validationSchema = Yup.object({
